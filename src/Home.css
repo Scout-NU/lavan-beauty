@@ -1,0 +1,103 @@
+.landing {
+  display: flex;
+}
+
+.landing-day-cream, .landing-night-cream {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.landing-day-cream img, .landing-night-cream img {
+  width: 100%;
+  height: auto;
+}
+
+.landing-day-cream h1 {
+  position: absolute;
+  bottom: 20%; 
+  left: 5%; 
+  text-align: left;
+}
+
+.landing-day-cream h3 {
+  position: absolute;
+  bottom: 10%; 
+  left: 5%; 
+  text-align: left;
+}
+
+.landing-night-cream h1 {
+  position: absolute;
+  bottom: 20%; 
+  right: 5%; 
+  text-align: right;
+}
+
+.landing-night-cream h3 {
+  position: absolute;
+  bottom: 10%; 
+  right: 5%; 
+  text-align: right;
+}
+
+.landing-text {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.product img {
+  width: 50%;
+}
+
+.product-info {
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.product-description {
+  margin-bottom: 5%;
+}
+
+.pharmacist {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.pharmacist img {
+  width: 50%;
+}
+
+.pharmacist-text {
+  margin-right: 3%;
+}
+
+.bottom-image img {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}

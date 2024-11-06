@@ -1,4 +1,4 @@
-/* Science.css */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 
 .Science {
   display: flex;
@@ -7,6 +7,8 @@
   background-color: #fff;
   padding: 20px;
   font-family: Arial, sans-serif;
+  width: 1436px;
+  gap: 81px;
 }
 
 .Science-header {
@@ -21,9 +23,9 @@
 
 .Top-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1220px;
   margin-bottom: 20px;
   justify-content: space-between;
 }
@@ -31,7 +33,6 @@
 .topLeftImg {
   width: 400px;
   height: 300px;
-  border-radius: 8px;
   margin-right: 100px;
 }
 
@@ -49,9 +50,9 @@
 /* Flex container for the middle section with image and description */
 .Middle-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1220px;
   margin-bottom: 20px;
   justify-content: space-between;
 }
@@ -70,7 +71,6 @@
 .bottomRightImg {
   width: 400px;
   height: 300px;
-  border-radius: 8px;
   margin-left: 100px;
 }
 
@@ -84,5 +84,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 1000px;
+  max-width: 1220px;
 }

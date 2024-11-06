@@ -1,0 +1,60 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust as necessary */
+  width: auto;
+}
+
+.nav {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}

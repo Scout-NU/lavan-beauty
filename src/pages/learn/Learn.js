@@ -8,21 +8,63 @@ function Learn() {
   const [selectedItem, setSelectedItem] = useState(null);
   const glossaryItems = [
     {
-      name: "Ingredient 1",
+      name: "chloride",
       image: ingredient,
       foundIn: "Night Cream",
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
     },
     {
-      name: "Ingredient 2",
+      name: "isopropyl",
       image: ingredient,
       foundIn: "Night Cream",
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
     },
     {
-      name: "Ingredient 3",
+      name: "fatty accid",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "petrolatum",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "Oil",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "Aloe Vera",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "Glycerin",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "Water",
+      image: ingredient,
+      foundIn: "Night Cream",
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    },
+    {
+      name: "Silicate",
       image: ingredient,
       foundIn: "Night Cream",
       description:
@@ -47,7 +89,11 @@ function Learn() {
             {glossaryItems.map((item) => (
               <li
                 key={item.name}
-                className="Glossary-item"
+                className={`Glossary-item ${
+                  selectedItem?.name === item.name
+                    ? "Glossary-item-selected"
+                    : ""
+                }`}
                 onClick={() => handleItemClick(item)}
               >
                 {item.name}

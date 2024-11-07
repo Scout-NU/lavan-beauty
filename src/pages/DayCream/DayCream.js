@@ -12,7 +12,7 @@ function DayCream() {
         </a>
       </div>
       <div className="product">
-        <div class="product-images">
+        <div className="product-images">
           <img src={placeholder} alt="Day Cream 1" />
           <img src={placeholder} alt="Day Cream 2" />
           <img src={placeholder} alt="Day Cream 3" />

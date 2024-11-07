@@ -28,26 +28,31 @@ function Home() {
               $XX
             </span>
             <span className="sizes">
-              XXml XXml
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <circle cx="10.5" cy="10.5" r="9.5" fill="#D9D9D9" stroke="black" stroke-width="2" />
+              </svg> XXml
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <circle cx="10.5" cy="10.5" r="9.5" fill="#D9D9D9" stroke="#D9D9D9" stroke-width="2" />
+              </svg> XXml
             </span>
           </div>
           <div className="product-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
-          <div className="add-to-bag-button">
-            <button>Add to Bag</button>
+          <div className="add-to-bag">
+            <a className="add-to-bag" href="/">Add to bag</a>
           </div>
         </div>
       </div>
       <div className="pharmacist">
         <div className="pharmacist-text">
           <h1>Made by a pharmacist</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <img src={placeholder} alt="Pharmacist" />
       </div>
       <div className="bottom-image">
-        <img src={placeholder} alt=""/>
+        <img src={placeholder} alt="" />
       </div>
       <div className="logo">
         <h1>Lavan Beauty Logo</h1>

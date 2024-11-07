@@ -9,7 +9,7 @@ function App() {
         <Route path="/" element={<DayCream />} />
       </Routes>
       </BrowserRouter>
-    </div>
+    </div> 
   );
 }
 

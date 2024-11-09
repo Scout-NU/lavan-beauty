@@ -9,6 +9,7 @@ import NightCream from "./pages/NightCream/NightCream";
 import Science from "./pages/science/Science";
 import Shop from "./pages/shop/Shop";
 import Header from "./components/header/header";
+import AboutUs from './pages/about-us/AboutUs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/nightcream" element={<NightCream />} />
           <Route path="/science" element={<Science />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
       <Footer />

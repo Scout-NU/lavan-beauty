@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didot&display=swap");
+
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  width: 1440px;
+  height: 2619px;
+  }
+
+.about-us-container{
+  display: flex;
+  width: 974px;
+  padding-top: 3px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70;
+  margin-left: 257;
+}
+
+.About-Us-header {
+  width: 974px;
+  height: 115px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Aboreto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 257px;
+  
+}
+  
+.MissionStatement-description {
+  width: 637px;
+  height: 213px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Abyssinica SIL";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+  
+.MissionStatement-image {
+  width: 582px;
+  height: 557px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.MissionStatement-container {
+  display: inline-flex;
+  padding: 8px 73px 0px 108px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+}
+  
+.Founder-image {
+  width: 518px;
+  height: 518px;
+  flex-shrink: 0;
+  margin-bottom: 40px;
+  margin-right: 388px;
+}
+
+.Founder-header {
+  width: 518px;
+  height: 106px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Aboreto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+.Founder-description {
+  width: 1243px;
+  height: 143px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Abyssinica SIL";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+.Founder-container {
+  display: inline-flex;
+  padding: 0px 0px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 41px;
+}
+
+
+  

@@ -130,7 +130,30 @@
 }
 
 .MoonCresent-image{
-    
+    width: 388.484px;
+    height: 353.327px;
+    flex-shrink: 0;
+}
+
+.MoonCircle-image{
+    width: 309.381px;
+    height: 309.381px;
+    flex-shrink: 0;
+    border-radius: 309.381px;
+    background: #FFF;
+}
+
+.MoonSquare-image{
+    width: 114px;
+    height: 114px;
+    flex-shrink: 0;
+    background: #838383;   
+}
+
+.set-container{
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 16px;
 }
 
 

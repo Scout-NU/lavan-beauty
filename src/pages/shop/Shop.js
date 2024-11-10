@@ -50,37 +50,47 @@ function Shop() {
                  <button className="prevBtn" id="prevBtn">
                     <img src="" alt=""></img>
                  </button>
-             <div class="carousel-slide">
-                <img src="" id="lastClone" alt=""></img>
-                <img src="" alt=""></img>
-                <img src="" alt=""></img>
-                <img src="" alt=""></img>
-                <img src="" alt=""></img>
-                <img src="" alt=""></img>
-                <img src="" id="firstClone" alt=""></img>
-            </div>
+                <div class="carousel-slide">
+                    <img src="" id="lastClone" alt=""></img>
+                    <img src="" alt=""></img>
+                    <img src="" alt=""></img>
+                    <img src="" alt=""></img>
+                    <img src="" alt=""></img>
+                    <img src="" alt=""></img>
+                    <img src="" id="firstClone" alt=""></img>
+                </div>
             </div>
 
             <div className="products-container">
                 {/* signature collection section*/}
                 <div className="signature-container">
                     <div className="signature-first-container">
-                        <header className="signature-header">
-                            <p>Signature Collection</p>
-                        </header>
-                        <div className="signature-description-container">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit "</p>
+                        <div className="signature-header-container">
+                            <header className="signature-header">
+                                <p>Signature Collection</p>
+                            </header>
+                            <div className="signature-description">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit "</p>
+                            </div>
+                        </div>
+                        <button className="learnMore-button">Learn More</button>
+                    </div>
+                    <div className="signature-second-container">
+                        <div className="sun">
+                            <img className="Sun-image" src={} alt="sun" />
+                            <img className="SunSquare-image" src={} alt="sun square" />
+                        </div>
+                        <div className="moon">
+                            <img className="MoonCresent-image" src={} alt="moon cresent" />
+                            <img className="MoonCircle-image" src={} alt="moon circle" />
+                            <img className="MoonSquare-image" src={} alt="moon square" />
                         </div>
                     </div>
-                    <button className="learnMore-button">Learn More</button>
-                    <div className="signature-second-container">
-                        <img className="Sun-image" src={} alt="sun" />
-                        <img className="SunSquare-image" src={} alt="sun square" />
-                        <img className="MoonCresent-image" src={} alt="moon cresent" />
-                        <img className="MoonCircle-image" src={} alt="moon circle" />
-                        <img className="MoonSquare-image" src={} alt="moon square" />
-                    </div>
                 
+                </div>
+
+                <div className="products">
+                    
                 </div>
 
                 {/* set section*/}
@@ -94,7 +104,7 @@ function Shop() {
                             <p>"$55"</p>
                         </div>
                     </div>
-                    <div className="set-description-container">
+                    <div className="set-description">
                         <div className="set-description-text">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                         </div>

@@ -1,16 +1,17 @@
 import React from "react";
-import "./App.css";
-import Learn from "./pages/learn/Learn";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home/Home';
+import Learn from "./pages/learn/Learn";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+        <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Learn />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/learn" element={<Learn />} />
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
     </div>
   );
 }

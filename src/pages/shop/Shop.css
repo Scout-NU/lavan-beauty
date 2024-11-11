@@ -305,14 +305,51 @@
     gap: 6.36px;
 }
 
-.set-button-image-30ml {
-    width: 17.712px;
-    height: 18.02px;
-    fill: #D9D9D9;
-    stroke-width: 2.12px;
-    stroke: #000;
+.set-30ml-text {
+    color: #000;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
+.set-button-60ml {
+    display: flex;
+    align-items: center;
+    gap: 6.36px;
+}
 
+.set-button-image-60ml {
+    width: 18.071px;
+    height: 18.02px;
+    width: 18.071px;
+    height: 18.02px;
+}
 
+.set-60ml-text {
+    width: 77.87px;
+    color: #000;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.set-ViewProduct-button {
+    display: flex;
+    height: 55.896px;
+    padding: 6.36px 82.682px;
+    justify-content: center;
+    align-items: center;
+    gap: 10.6px;
+    align-self: stretch;
+    color: #000;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 

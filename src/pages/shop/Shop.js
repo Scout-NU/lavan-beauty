@@ -61,7 +61,7 @@ function Shop() {
                 </div>
             </div>
 
-            <div className="info-container">
+            
                 {/* signature collection section*/}
                 <div className="signature-container">
                     <div className="signature-first-container">
@@ -93,47 +93,49 @@ function Shop() {
                     {/* set section*/}
                     <div className="set-container">
                         <img className="set-image" src={} alt="set image" />
-                        <div className="set-header-container">
-                            <header className="set-header">
-                                <p>Day & Night Cream Set</p>
-                            </header>
-                            <div className="set-price-container">
-                                <p>"$55"</p>
-                            </div>
-                        </div>
-                        <div className="set-description">
-                            <div className="set-description-text">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                            </div>
-                            <div className="set-reviews-container">
-                                <div className="set-reviews">
-                                    <p>"50 Reviews"</p>
-                                </div>
-                                <div className="set-stars-container">
-                                    <img className="star1-image" src={} alt="star 1" />
-                                    <img className="star2-image" src={} alt="star 2" />
-                                    <img className="star3-image" src={} alt="star 3" />
-                                    <img className="star4-image" src={} alt="star 4" />
-                                    <img className="star5-image" src={} alt="star 5" />
+                        <div className="set-second-half">
+                            <div className="set-header-container">
+                                <header className="set-header">
+                                    <p>Day & Night Cream Set</p>
+                                </header>
+                                <div className="set-price-container">
+                                    <p>"$55"</p>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div className="size-buttons-container">
-                            <div className="30ml">
-                                <button className="30ml-button">
-                                    <img className="circle-button-image" src={} alt="circle button" />
-                                </button>
-                                <p>30 ml</p>
+                            <div className="set-description">
+                                <div className="set-description-text">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                                </div>
+                                <div className="set-reviews-container">
+                                    <div className="set-stars-container">
+                                        <img className="star1-image" src={} alt="star 1" />
+                                        <img className="star2-image" src={} alt="star 2" />
+                                        <img className="star3-image" src={} alt="star 3" />
+                                        <img className="star4-image" src={} alt="star 4" />
+                                        <img className="star5-image" src={} alt="star 5" />
+                                    </div>
+                                    <div className="set-reviews">
+                                        <p>"50 Reviews"</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="60ml">
-                                <button className="60ml-button">
-                                    <img className="circle-button-image" src={} alt="circle button" />
-                                </button>
-                                <p>60 ml</p>
+                        
+                            <div className="size-buttons-container">
+                                <div className="set-button-30ml">
+                                    <img className="set-button-image-30ml" src={} alt="circle button" />
+                                    <div className="set-30ml-text">
+                                        <p>30 ml</p>
+                                    </div>
+                                </div>
+                                <div className="set-button-60ml">
+                                    <img className="set-button-image-60ml" src={} alt="circle button" />
+                                    <div className="set-60ml-text">
+                                        <p>60 ml</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <button className="ViewProduct-button">View Product</button>
+                            <button className="set-ViewProduct-button">View Product</button>
+                            </div>
                     </div>
 
                     {/* individual product section*/}
@@ -215,7 +217,6 @@ function Shop() {
                         </div>
                 
                     </div>
-                </div>
             </div>
             
         </div>

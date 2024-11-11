@@ -1,23 +1,10 @@
-/* Header.css */
-
 .header {
   display: flex;
-  align-items: center;
+  width: 1440px;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
-
-.logo-container {
-  display: flex;
   align-items: center;
-}
-
-.logo {
-  height: 50px; /* Adjust as necessary */
-  width: auto;
+  flex-shrink: 0;
+  background: var(--Primary-Color, #fefaef);
 }
 
 .nav {
@@ -28,33 +15,53 @@
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 20px;
   padding: 0;
   margin: 0;
+  justify-content: space-between;
 }
 
 .nav-item {
-  color: #333;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
+  text-align: center;
+  font-family: "Bodoni 72";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
 }
 
-.nav-item:hover {
-  color: #007bff;
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.cta-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
+.lavan-beauty {
+  color: var(--Primary-Color, #382e26);
+  text-align: center;
+  font-family: "Luxurious Script";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.cta-button:hover {
-  background-color: #0056b3;
+.first-half {
+  display: flex;
+  /* width: 410px; */
+  padding: 0px 40px;
+  align-items: center;
+  gap: 60px;
+  flex-shrink: 0;
+  /* flex-grow: 1; */
+}
+
+.second-half {
+  /* margin-left: 120px; */
+  display: flex;
+  padding: 0px 40px;
+  align-items: center;
+  gap: 60px;
+  /* width: 410px; */
+  /* flex-grow: 1; */
 }

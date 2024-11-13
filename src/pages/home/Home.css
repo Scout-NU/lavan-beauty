@@ -1,0 +1,217 @@
+.home {
+  width: 90rem;
+}
+
+.landing {
+  display: flex;
+}
+
+.landing-day-cream,
+.landing-night-cream {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.landing-day-cream img,
+.landing-night-cream img {
+  width: 45rem;
+  height: 53.5rem;
+  flex-shrink: 0;
+}
+
+.landing-day-cream h1 {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 10.44rem;
+  left: 3.13rem;
+  text-align: left;
+  margin: 0;
+}
+
+.landing-day-cream h3 {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  bottom: 6.2rem;
+  left: 3.13rem;
+  text-align: left;
+}
+
+.landing-night-cream h1 {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 10.44rem;
+  right: 3.12rem;
+  text-align: right;
+  margin: 0;
+}
+
+.landing-night-cream h3 {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  bottom: 6.2rem;
+  right: 3.12rem;
+  text-align: right;
+}
+
+.landing-text {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 6.5rem;
+  margin-bottom: 6.5rem;
+  margin-left: 8.94rem;
+  margin-right: 6.44rem;
+}
+
+.product {
+  display: flex;
+  margin-right: 2.5rem;
+  margin-left: 8.94rem;
+}
+
+.product img {
+  width: 36.99956rem;
+  height: 36.8125rem;
+  flex-shrink: 0;
+  margin-bottom: 6.5rem;
+}
+
+.product-info {
+  margin-left: 5.5rem;
+  margin-top: 4.13rem;
+  margin-right: 1rem;
+}
+
+.product-info h1 {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.product-details {
+  color: #000;
+  font-family: Baskerville;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 2%;
+}
+
+.sizes {
+  font-size: 1.5rem;
+  margin-right: 2.5rem;
+}
+
+.sizes svg {
+  margin-left: 1.95rem;
+}
+
+.product-description {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 2.25rem;
+}
+
+.add-to-bag {
+  display: flex;
+  width: 22.5625rem;
+  height: 4.3125rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #D9D9D9;
+  color: #000;
+  font-family: Baskerville;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: normal;
+}
+
+.pharmacist {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background: #D9D9D9;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.pharmacist img {
+  width: 34.09281rem;
+  height: 30.3125rem;
+  padding-right: 2.66rem;
+  padding-top: 3.06rem;
+  padding-bottom: 2.88rem;
+}
+
+.pharmacist-text {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 2.87rem;
+  padding-right: 4.19rem;
+  padding-left: 3rem;
+}
+
+.pharmacist-text h1 {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.bottom-image img {
+  width: 100%;
+  height: 44.6875rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}

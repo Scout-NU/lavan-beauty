@@ -7,39 +7,131 @@
 .back-button svg {
     width: 1.25rem;
     height: 2.375rem;
-    margin-left: 4.5rem;
-    margin-bottom: 8.19rem;
-    margin-top: 8.94rem;
+    margin-left: 3.25rem;
+    margin-bottom: 2.69rem;
+    margin-top: 2.69rem;
 }
 
 .product {
     display: flex;
-    height: 110rem;
 }
 
-.product-images {
-    overflow-y: auto;
-    max-height: 132.75rem;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+.image-carousel {
+    position: relative;
+    width: 40.125rem;
+    margin-left: 3.12rem;
+    margin-right: 2.37rem;
 }
 
-.product-images img {
+.carousel-container {
+    position: relative;
     width: 40.125rem;
     height: 40.125rem;
-    flex-shrink: 0;
-    margin-bottom: 2.94rem;
-    margin-left: 3.13rem;
-    margin-right: 2.37rem;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-container img {
+    width: 40.125rem;
+    height: 40.125rem;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 2.375rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button.prev {
+    left: 0.75rem;
+}
+
+.carousel-button.next {
+    right: 1.06rem;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: #FFFFFF;
+}
+
+.thumbnail-strip {
+    display: inline-flex;
+    align-items: center;
+    width: 40.125rem;
+    gap: 0.99844rem;
+    margin-top: 1.38rem;
+    margin-left: 3.12rem;
+    margin-right: 2.31rem;
+}
+
+.thumbnail {
+    width: 7.23875rem;
+    height: 7.23875rem;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    opacity: 0.9;
+}
+
+.thumbnail.active {
+    opacity: 1;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-details {
+    display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: sticky;
+    margin-right: 6.69rem;
+    margin-top: 9.69rem;
 }
 
 .product-info {
@@ -49,12 +141,26 @@
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
-    margin-right: 6.69rem;
-    margin-top: 9.69rem;
 }
 
-.product-info h2,
-.product-reviews h2 {
+.title-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.price {
+    color: #000;
+    text-align: right;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subheading {
     color: #000;
     font-family: Baskerville;
     font-size: 2.875rem;
@@ -64,7 +170,7 @@
     margin: 0;
 }
 
-.product-details p,
+.product-details-text,
 .review-text {
     color: #000;
     font-family: "Hiragino Mincho Pro";
@@ -76,7 +182,7 @@
 
 .product-ingredients,
 .product-ingredients a {
-    height: 5.5rem;
+    height: 3.4375rem;
     justify-content: center;
     align-self: stretch;
     color: #000;
@@ -87,24 +193,44 @@
     line-height: normal;
 }
 
-.shop-button {
+.product-sizes {
     display: flex;
-    width: 12rem;
-    height: 4.3125rem;
-    padding: 0.25rem 5.75rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    background: #D9D9D9;
-    border: none;
-    color: #000;
+    justify-content: flex-end;
+    align-self: flex-end;
+    gap: 1.23513rem;
+    color: #382E26;
     font-family: "Hiragino Mincho Pro";
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 300;
-    text-decoration: none;
     line-height: normal;
-    margin-bottom: 10.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.learn-more-button {
+    display: flex;
+    width: 10.6875rem;
+    height: 3.25rem;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    border: 0px solid #382E26;
+    background: #382E26;
+    color: #FFFCFA;
+    text-align: center;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.4375rem;
+    letter-spacing: 0.025rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.product-reviews {
+    margin-top: 4.07rem;   
+    margin-left: 3.12rem;
 }
 
 .review {

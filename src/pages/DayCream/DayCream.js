@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './DayCream.css';
 import placeholder from '../../assets/placeholder.jpg';
 
@@ -24,6 +25,28 @@ const StarRating = ({ rating }) => {
 };
 
 function DayCream() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const productImages = [
+    { src: placeholder, alt: "Day Cream 1" },
+    { src: placeholder, alt: "Day Cream 2" },
+    { src: placeholder, alt: "Day Cream 3" },
+    { src: placeholder, alt: "Day Cream 4" },
+    { src: placeholder, alt: "Day Cream 5" },
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === productImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const previousImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? productImages.length - 1 : prevIndex - 1
+    );
+  };
+
   const ingredients = [
     { name: 'Oil', link: '/' },
     { name: 'Aloe', link: '/' },
@@ -55,14 +78,54 @@ function DayCream() {
       </div>
       <div className="product">
         <div className="product-images">
-          <img src={placeholder} alt="Day Cream 1" />
-          <img src={placeholder} alt="Day Cream 2" />
-          <img src={placeholder} alt="Day Cream 3" />
+          <div className="image-carousel">
+            <button className="carousel-button prev" onClick={previousImage}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="42" viewBox="0 0 24 42" fill="none">
+                <path d="M2.14648 20.5135L22.0001 1.99998" stroke="#FEFAEF" stroke-width="3" stroke-linecap="round" />
+                <path d="M2 20.6556L21.8286 39.9996" stroke="#FEFAEF" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div className="carousel-container">
+              <img
+                src={productImages[currentImageIndex].src}
+                alt={productImages[currentImageIndex].alt}
+              />
+              <div className="carousel-indicators">
+                {productImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`carousel-dot ${index === currentImageIndex ? 'active' : ''}`}
+                    onClick={() => setCurrentImageIndex(index)}
+                  />
+                ))}
+              </div>
+            </div>
+            <button className="carousel-button next" onClick={nextImage}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="42" viewBox="0 0 24 42" fill="none">
+                <path d="M21.8535 20.5135L1.9999 1.99998" stroke="#FEFAEF" stroke-width="3" stroke-linecap="round" />
+                <path d="M22 20.6556L2.1714 39.9996" stroke="#FEFAEF" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div className="thumbnail-strip">
+            {productImages.map((image, index) => (
+              <div
+                key={index}
+                className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                onClick={() => setCurrentImageIndex(index)}
+              >
+                <img src={image.src} alt={`Thumbnail ${index + 1}`} />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="product-details">
           <div className="product-info">
-            <h2>Day Cream</h2>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            <div className="title-and-price">
+              <span className="subheading">Day Cream</span>
+              <span className="price">$55</span>
+            </div>
+            <div className="product-details-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</div>
             <div className='product-ingredients'>
               Ingredients:&nbsp;
               {ingredients.map((ingredient, index) => (
@@ -72,10 +135,24 @@ function DayCream() {
                 </span>
               ))}
             </div>
-            <a href="/" className="shop-button">Shop Now</a>
           </div>
-          <div className="product-reviews">
-            <h2>Reviews</h2>
+          <div className="product-sizes">
+            <span className="size">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M9.73391 18.541C14.387 18.541 18.1298 14.7007 18.1298 9.99999C18.1298 5.29925 14.387 1.45901 9.73391 1.45901C5.08084 1.45901 1.33804 5.29925 1.33804 9.99999C1.33804 14.7007 5.08084 18.541 9.73391 18.541Z" fill="#382E26" stroke="#382E26" stroke-width="1.79657" />
+              </svg> 30 ml
+            </span>
+            <span className="size">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10.0335 18.541C14.7537 18.541 18.5816 14.7178 18.5816 9.99999C18.5816 5.28215 14.7537 1.45901 10.0335 1.45901C5.31337 1.45901 1.4855 5.28215 1.4855 9.99999C1.4855 14.7178 5.31337 18.541 10.0335 18.541Z" fill="#FEFAEF" stroke="#382E26" stroke-width="1.79657" />
+              </svg> 60 ml
+            </span>
+          </div>
+          <a href="/" className="learn-more-button">Learn More</a>
+        </div>
+      </div>
+      <div className="product-reviews">
+            <span className="subheading">Reviews</span>
             {reviews.map((review, index) => (
               <div className="review" key={index}>
                 <StarRating rating={review.rating} />
@@ -93,8 +170,6 @@ function DayCream() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
     </div>
   );
 }

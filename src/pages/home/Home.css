@@ -1,8 +1,48 @@
-.home {
-  width: 90rem;
-  background-color: #FEFAEF;
+:root {
+  /* Colors */
+  --color-bg: #fefaef;
+  --color-text: #000;
+  --color-primary: #382e26;
+  --color-green: #334e3d;
+
+  /* Typography */
+  --font-baskerville: Baskerville;
+  --font-bodoni: "Bodoni 72";
+  --font-hiragino: "Hiragino Mincho Pro";
+  --font-size-base: 1.25rem;
+  --font-size-large: 2.875rem;
+  --font-size-xlarge: 4rem;
 }
 
+/* Common styles */
+.home {
+  max-width: 90rem;
+  width: 100%;
+  background-color: var(--color-bg);
+}
+
+/* Heading styles */
+.landing-text,
+.product-info h1,
+.pharmacist-text h1 {
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Body text styles */
+.product-price,
+.product-description,
+.pharmacist-text,
+.view-product {
+  font-family: var(--font-hiragino);
+  font-size: var(--font-size-base);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Landing section */
 .landing {
   display: flex;
 }
@@ -21,22 +61,18 @@
 }
 
 .landing-text {
-  color: #000;
+  color: var(--color-text);
   text-align: center;
-  font-family: Baskerville;
-  font-size: 2.875rem;
+  font-family: var(--font-baskerville);
+  font-size: var(--font-size-large);
   font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 3.12rem;
-  margin-bottom: 3.12rem;
+  margin: 3.12rem 0;
 }
 
+/* Product section */
 .product {
   display: flex;
-  margin-right: 2.5rem;
-  margin-left: 8.94rem;
-  margin-bottom: 3.12rem;
+  margin: 0 2.5rem 3.12rem 8.94rem;
 }
 
 .product img {
@@ -46,35 +82,19 @@
 }
 
 .product-info {
-  margin-left: 5.99rem;
-  margin-top: 7.19rem;
-  margin-right: 1rem;
+  margin: 7.19rem 1rem 0 5.99rem;
 }
 
 .product-info h1 {
-  color: #000;
-  font-family: Baskerville;
-  font-size: 2.875rem;
+  color: var(--color-text);
+  font-family: var(--font-baskerville);
+  font-size: var(--font-size-large);
   font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
   margin-bottom: 2.19rem;
 }
 
-.product-price,
 .product-description {
-  color: #000;
-  font-family: "Hiragino Mincho Pro";
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.product-description {
-  margin-top: 0.75rem;
-  margin-bottom: 4.44rem;
+  margin: 0.75rem 0 4.44rem;
 }
 
 .view-product {
@@ -83,55 +103,41 @@
   height: 4.3125rem;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  background: var(--Primary-Color, #382E26);
-  color: var(--Primary-Color, #FEFAEF);
-  font-family: "Hiragino Mincho Pro";
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 300;
+  background: var(--color-primary);
+  color: var(--color-bg);
   text-decoration: none;
-  line-height: normal;
 }
 
+.view-product:hover {
+  border: 1px solid var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* Pharmacist section */
 .pharmacist {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  background: #334E3D;
-  margin-left: 4.63rem;
-  margin-right: 4.63rem;
-  margin-bottom: 3.12rem;
+  background: var(--color-green);
+  margin: 0 4.63rem 3.12rem;
 }
 
 .pharmacist img {
   width: 31.25rem;
   height: 31.25rem;
-  padding-right: 2.89rem;
-  padding-top: 3.06rem;
-  padding-bottom: 1.94rem;
+  padding: 3.06rem 2.89rem 1.94rem 0;
 }
 
 .pharmacist-text {
-  color: var(--Primary-Color, #FEFAEF);
-  font-family: "Hiragino Mincho Pro";
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-bottom: 2.88rem;
-  margin-left: 2.75rem;
-  margin-right: 9.49rem;
+  color: var(--color-bg);
+  margin: 0 9.49rem 2.88rem 2.75rem;
 }
 
 .pharmacist-text h1 {
-  color: var(--Primary-Color, #FEFAEF);
-  font-family: "Bodoni 72";
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
+  color: var(--color-bg);
+  font-family: var(--font-bodoni);
+  font-size: var(--font-size-xlarge);
   margin-bottom: 2.56rem;
 }
 
@@ -142,4 +148,12 @@
 .bottom-image img {
   height: 40.0625rem;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .landing,
+  .product,
+  .pharmacist {
+    flex-direction: column;
+  }
 }

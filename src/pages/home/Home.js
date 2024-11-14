@@ -1,14 +1,14 @@
-import './Home.css';
-import left_landing from '../../assets/home/left_landing.png';
-import right_landing from '../../assets/home/right_landing.png';
-import product_image from '../../assets/home/product_image.png';
-import pharmacist from '../../assets/home/pharmacist.png';
-import bottom_image from '../../assets/home/bottom_image.png';
-import placeholder from '../../assets/placeholder.jpg';
+import "./Home.css";
+import left_landing from "../../assets/home/left_landing.png";
+import right_landing from "../../assets/home/right_landing.png";
+import product_image from "../../assets/home/product_image.png";
+import pharmacist from "../../assets/home/pharmacist.png";
+import bottom_image from "../../assets/home/bottom_image.png";
 
 function Home() {
   return (
     <div className="home">
+      {/* Hero section with split product images */}
       <div className="landing">
         <div className="landing-day-cream">
           <img src={left_landing} alt="Day Cream" />
@@ -20,30 +20,43 @@ function Home() {
       <div className="landing-text">
         Where luxurious skincare meets nature’s finest ingredients
       </div>
+
+      {/* Product showcase section */}
       <div className="product">
         <img src={product_image} alt="Day and Night Cream Set" />
         <div className="product-info">
           <h1>Day & Night Set Name</h1>
-          <div className="product-price">
-            $36
-          </div>
-          <div className="product-description">
-            Experience the ultimate skincare transformation with our Day & Night Cream Duo, designed to nourish and revitalize your skin around the clock.
-          </div>
-          <div className="view-product">
-            <a className="view-product" href="/">View Product</a>
-          </div>
+          <p className="product-price">$36</p>
+          <p className="product-description">
+            Experience the ultimate skincare transformation with our Day & Night
+            Cream Duo, designed to nourish and revitalize your skin around the
+            clock.
+          </p>
+          <button
+            className="view-product"
+            onClick={() => (window.location.href = "/")}
+          >
+            View Product
+          </button>
         </div>
       </div>
+
+      {/* Pharmacist section */}
       <div className="pharmacist">
         <div className="pharmacist-text">
           <h1>Made by a pharmacist</h1>
-          Crafted by a skilled pharmacist, our Day & Night Cream Duo combines expert knowledge with high-quality ingredients to deliver effective, trustworthy skincare.
+          <p>
+            Crafted by a skilled pharmacist, our Day & Night Cream Duo combines
+            expert knowledge with high-quality ingredients to deliver effective,
+            trustworthy skincare.
+          </p>
         </div>
         <img src={pharmacist} alt="Pharmacist" />
       </div>
+
+      {/* Decorative footer image */}
       <div className="bottom-image">
-        <img src={bottom_image} alt="" />
+        <img src={bottom_image} alt="Decorative image" />
       </div>
     </div>
   );

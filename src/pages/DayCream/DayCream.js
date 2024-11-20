@@ -7,14 +7,20 @@ import productPhoto from "../../assets/daycream/productPhoto.png";
 /**
  * Renders pagination dots for carousels
  */
-const CarouselDots = ({ total, current, onSelect }) => (
-  <div className="carousel-indicators">
+const CarouselDots = ({
+  carouselName,
+  carouselDotName,
+  total,
+  current,
+  onSelect,
+}) => (
+  <div className={carouselName}>
     {Array(total)
       .fill()
       .map((_, index) => (
         <button
           key={index}
-          className={`carousel-dot ${index === current ? "active" : ""}`}
+          className={`${carouselDotName} ${index === current ? "active" : ""}`}
           onClick={() => onSelect(index)}
         />
       ))}
@@ -48,13 +54,11 @@ const SizeButton = ({ isSelected }) => (
 function ReviewCarousel({ reviews }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => Math.max(prev - 2, 0));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(prev + 2, reviews.length - 2));
-  };
+  const handleReviewChange = useCallback((increment) => {
+    setCurrentIndex((current) =>
+      cycleIndex(current, reviews.length, increment),
+    );
+  }, []);
 
   const visibleReviews = reviews.slice(currentIndex, currentIndex + 2);
 
@@ -64,7 +68,7 @@ function ReviewCarousel({ reviews }) {
       <div className="review-carousel">
         <button
           className="carousel-arrow prev"
-          onClick={handlePrev}
+          onClick={() => handleReviewChange(-1)}
           disabled={currentIndex === 0}
         >
           <svg
@@ -124,7 +128,7 @@ function ReviewCarousel({ reviews }) {
 
         <button
           className="carousel-arrow next"
-          onClick={handleNext}
+          onClick={() => handleReviewChange(1)}
           disabled={currentIndex >= reviews.length - 2}
         >
           <svg
@@ -149,15 +153,13 @@ function ReviewCarousel({ reviews }) {
           </svg>
         </button>
       </div>
-      <div className="review-indicators">
-        {reviews.map((_, index) => (
-          <button
-            key={index}
-            className={`review-dot ${index === currentIndex ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
+      <CarouselDots
+        carouselName="review-indicators"
+        carouselDotName="review-dot"
+        total={reviews.length - 1}
+        current={currentIndex}
+        onSelect={setCurrentIndex}
+      />
     </div>
   );
 }
@@ -220,17 +222,22 @@ function DayCream() {
     {
       rating: 5,
       text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      author: "1 Name",
+      author: "Person Name1",
     },
     {
       rating: 5,
       text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      author: "2 Name",
+      author: "Person Name2",
     },
     {
       rating: 5,
       text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      author: "3 Name",
+      author: "Person Name3",
+    },
+    {
+      rating: 5,
+      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      author: "Person Name4",
     },
   ];
 
@@ -284,6 +291,8 @@ function DayCream() {
             <div className="carousel-container">
               <img {...productImages[currentImageIndex]} alt="Product" />
               <CarouselDots
+                carouselName="carousel-indicators"
+                carouselDotName="carousel-dot"
                 total={productImages.length}
                 current={currentImageIndex}
                 onSelect={setCurrentImageIndex}

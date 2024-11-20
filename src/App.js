@@ -9,7 +9,7 @@ import Science from "./pages/science/Science";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

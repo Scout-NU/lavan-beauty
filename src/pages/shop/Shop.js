@@ -6,6 +6,32 @@ function Shop() {
     const carouselImages = docuament.querySelectorAll('.carousel-slide img');
     const prevBtn = document.querySelector('#prevBtn');
     const nextBtn = document.querySelector('#nextBtn');
+    function stars() {
+        return ( 
+        <div className="stars-container">
+            <img className="star-image" src={} alt="star 1" />
+            <img className="star-image" src={} alt="star 2" />
+            <img className="star-image" src={} alt="star 3" />
+            <img className="star-image" src={} alt="star 4" />
+            <img className="star-image" src={} alt="star 5" />
+        </div>);
+       }
+    function buttons() {
+        return(<div className="indiv-size-buttons-container">
+            <div className="button-ml">
+                <img className="button-image-ml" src={} alt="circle button" />
+                <div className="ml-text">
+                    <p>30 ml</p>
+                </div>
+            </div>
+            <div className="button-ml">
+                <img className="button-image-ml" src={} alt="circle button" />
+                <div className="ml-text">
+                    <p>60 ml</p>
+                </div>
+            </div>
+        </div>);
+    }
 
     let counter = 1;
     const size = carouselImages[0].clientWidth;
@@ -107,128 +133,70 @@ function Shop() {
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                                 </div>
                                 <div className="set-reviews-container">
-                                    <div className="set-stars-container">
-                                        <img className="star1-image" src={} alt="star 1" />
-                                        <img className="star2-image" src={} alt="star 2" />
-                                        <img className="star3-image" src={} alt="star 3" />
-                                        <img className="star4-image" src={} alt="star 4" />
-                                        <img className="star5-image" src={} alt="star 5" />
-                                    </div>
+                                    <stars/>
                                     <div className="set-reviews">
                                         <p>"50 Reviews"</p>
                                     </div>
                                 </div>
                             </div>
-                        
-                            <div className="size-buttons-container">
-                                <div className="set-button-30ml">
-                                    <img className="set-button-image-30ml" src={} alt="circle button" />
-                                    <div className="set-30ml-text">
-                                        <p>30 ml</p>
-                                    </div>
-                                </div>
-                                <div className="set-button-60ml">
-                                    <img className="set-button-image-60ml" src={} alt="circle button" />
-                                    <div className="set-60ml-text">
-                                        <p>60 ml</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <buttons/>
                             <button className="set-ViewProduct-button">View Product</button>
                             </div>
                     </div>
 
                     {/* individual product section*/}
                     <div className="individual-container">
-                        <div className="day-cream-container">
-                            <img className="day-cream-image" src={} alt="day cream image" />
-                            <div className="day-header-container">
-                                <header className="day-header">
+                        <div className="individual-cream-container">
+                            <img className="individual-cream-image" src={} alt="day cream image" />
+                            <div className="individual-header-container">
+                                <header className="header">
                                     <p>Day Cream</p>
                                 </header>
-                                <div className="day-price-container">
+                                <div className="individual-price-container">
                                     <p>"$55"</p>
                                 </div>
                             </div>
-                            <div className="day-description">
-                                <div className="day-description-text">
+                            <div className="individual-description">
+                                <div className="individual-description-text">
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                                 </div>
-                                <div className="day-reviews-container">
-                                    <div className="day-stars-container">
-                                        <img className="day-star1-image" src={} alt="star 1" />
-                                        <img className="day-star2-image" src={} alt="star 2" />
-                                        <img className="day-star3-image" src={} alt="star 3" />
-                                        <img className="day-star4-image" src={} alt="star 4" />
-                                        <img className="day-star5-image" src={} alt="star 5" />
-                                    </div>
-                                    <div className="day-reviews">
+                                <div className="individual-reviews-container">
+                                    <stars/>
+                                    <div className="reviews">
                                         <p>"50 Reviews"</p>
                                     </div>
                                 </div>
                             </div>
                         
-                            <div className="day-size-buttons-container">
-                                <div className="day-button-30ml">
-                                    <img className="day-button-image-30ml" src={} alt="circle button" />
-                                    <div className="day-30ml-text">
-                                        <p>30 ml</p>
-                                    </div>
-                                </div>
-                                <div className="day-button-60ml">
-                                    <img className="day-button-image-60ml" src={} alt="circle button" />
-                                    <div className="day-60ml-text">
-                                        <p>60 ml</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button className="day-ViewProduct-button">View Product</button>
+                            <buttons/>
+                            <button className="ViewProduct-button">View Product</button>
                         </div>
                         
 
-                        <div className="night-cream-container">
-                            <img className="night-cream-image" src={} alt="night cream image" />
-                            <div className="night-header-container">
-                                <header className="night-header">
-                                    <p>Day Cream</p>
+                        <div className="individual-cream-container">
+                            <img className="individual-cream-image" src={} alt="night cream image" />
+                            <div className="individual-header-container">
+                                <header className="header">
+                                    <p>Night Cream</p>
                                 </header>
-                                <div className="night-price-container">
+                                <div className="individual-price-container">
                                     <p>"$55"</p>
                                 </div>
                             </div>
-                            <div className="night-description">
-                                <div className="night-description-text">
+                            <div className="individual-description">
+                                <div className="individual-description-text">
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                                 </div>
-                                <div className="night-reviews-container">
-                                    <div className="night-stars-container">
-                                        <img className="night-star1-image" src={} alt="star 1" />
-                                        <img className="night-star2-image" src={} alt="star 2" />
-                                        <img className="night-star3-image" src={} alt="star 3" />
-                                        <img className="night-star4-image" src={} alt="star 4" />
-                                        <img className="night-star5-image" src={} alt="star 5" />
-                                    </div>
-                                    <div className="night-reviews">
+                                <div className="individual-reviews-container">
+                                    <stars/>
+                                    <div className="reviews">
                                         <p>"50 Reviews"</p>
                                     </div>
                                 </div>
                             </div>
                         
-                            <div className="night-size-buttons-container">
-                                <div className="night-button-30ml">
-                                    <img className="night-button-image-30ml" src={} alt="circle button" />
-                                    <div className="night-30ml-text">
-                                        <p>30 ml</p>
-                                    </div>
-                                </div>
-                                <div className="night-button-60ml">
-                                    <img className="night-button-image-60ml" src={} alt="circle button" />
-                                    <div className="night-60ml-text">
-                                        <p>60 ml</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button className="night-ViewProduct-button">View Product</button>
+                            <buttons/>
+                            <button className="ViewProduct-button">View Product</button>
                         </div>
                     </div>
                 </div>

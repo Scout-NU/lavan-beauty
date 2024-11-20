@@ -233,40 +233,7 @@
     gap: 7.166px;
 }
 
-.set-stars-container {
-    display: flex;
-    align-items: center;
-}
 
-.star1-image {
-    width: 18.632px;
-    height: 18.632px;
-    fill: #838383;
-}
-
-.star2-image {
-    width: 18.632px;
-    height: 18.632px;
-    fill: #838383;
-}
-
-.star3-image {
-    width: 18.632px;
-    height: 18.632px;
-    fill: #838383;
-}
-
-.star4-image {
-    width: 18.632px;
-    height: 18.632px;
-    fill: #838383;
-}
-
-.star5-image {
-    width: 18.632px;
-    height: 18.632px;
-    fill: #838383;
-}
 
 .set-reviews {
     color: #000;
@@ -277,65 +244,6 @@
     line-height: normal;
 }
 
-.size-buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 20px;
-    align-self: stretch;
-}
-
-.set-button-30ml {
-    display: flex;
-    align-items: center;
-    gap: 6.36px;
-}
-
-.set-button-image-30ml {
-    width: 17.712px;
-    height: 18.02px;
-    fill: #D9D9D9;
-    stroke-width: 2.12px;
-    stroke: #000;
-}
-
-.set-button-30ml {
-    display: flex;
-    align-items: center;
-    gap: 6.36px;
-}
-
-.set-30ml-text {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.set-button-60ml {
-    display: flex;
-    align-items: center;
-    gap: 6.36px;
-}
-
-.set-button-image-60ml {
-    width: 18.071px;
-    height: 18.02px;
-    width: 18.071px;
-    height: 18.02px;
-}
-
-.set-60ml-text {
-    width: 77.87px;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
 
 .set-ViewProduct-button {
     display: flex;
@@ -360,7 +268,7 @@
     align-self: stretch;
 }
 
-.day-cream-container {
+.individual-cream-container {
     display: flex;
     width: 338.446px;
     flex-direction: column;
@@ -368,13 +276,13 @@
     gap: 20px;
 }
 
-.day-cream-image {
+
+.individual-cream-image {
     width: 410.541px;
     height: 410px;
-    background: #D9D9D9;
 }
 
-.day-header-container {
+.individual-header-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,7 +292,7 @@
     flex-wrap: wrap;
 }
 
-.day-header {
+.header {
     flex: 1 0 0;
     color: #000;
     font-family: Baskerville;
@@ -394,7 +302,7 @@
     line-height: normal;
 }
 
-.day-price-container {
+.individual-price-container {
     color: #000;
     font-family: "Hiragino Mincho Pro";
     font-size: 16px;
@@ -403,7 +311,7 @@
     line-height: normal;
 }
 
-.day-description {
+.individual-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -411,53 +319,12 @@
     align-self: stretch;
 }
 
-.day-description-text {
-    align-self: stretch;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.day-reviews-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.day-stars-container {
-    display: flex;
-    align-items: center;
-}
-
-.day-star1-image {
+.star-image {
     width: 13px;
     height: 13px;
 }
 
-.day-star2-image {
-    width: 13px;
-    height: 13px;
-}
-
-.day-star3-image {
-    width: 13px;
-    height: 13px;
-}
-
-.day-star4-image {
-    width: 13px;
-    height: 13px;
-}
-
-.day-star5-image {
-    width: 13px;
-    height: 13px;
-}
-
-.day-reviews {
+.reviews {
     color: #000;
     font-family: "Hiragino Mincho Pro";
     font-size: 10px;
@@ -466,19 +333,13 @@
     line-height: normal;
 }
 
-.day-size-buttons-container {
+.indiv-size-buttons-container {
     display: flex;
     align-items: center;
     gap: 16.271px;
 }
 
-.day-button-30ml {
-    display: flex;
-    align-items: center;
-    gap: 4.438px;
-}
-
-.day-button-image-30ml {
+.button-image-ml {
     width: 12.358px;
     height: 12.573px;
     fill: #D9D9D9;
@@ -486,7 +347,7 @@
     stroke: #000;
 }
 
-.day-30ml-text {
+.ml-text {
     color: #000;
     font-family: "Hiragino Mincho Pro";
     font-size: 16px;
@@ -495,30 +356,14 @@
     line-height: normal;
 }
 
-.day-button-60ml {
+.button-ml {
     display: flex;
     align-items: center;
     gap: 4.438px;
 }
 
-.day-button-image-60ml {
-    width: 12.358px;
-    height: 12.573px;
-    fill: #D9D9D9;
-    stroke-width: 1.479px;
-    stroke: #000;
-}
 
-.day-60ml-text {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.day-ViewProduct-button{
+.ViewProduct-button{
     display: flex;
     height: 39px;
     padding: 4.438px 57.689px;
@@ -534,49 +379,7 @@
     line-height: normal;
 }
 
-.night-cream-container {
-    display: flex;
-    width: 338.446px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.night-cream-image {
-    width: 410.541px;
-    height: 410px;
-}
-
-.night-header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-
-.night-header {
-    flex: 1 0 0;
-    color: #000;
-    font-family: Baskerville;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.night-price-container {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.night-description {
+.individual-description-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -584,123 +387,14 @@
     align-self: stretch;
 }
 
-.night-description-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-}
-
-.night-reviews-container {
+.individual-reviews-container {
     display: flex;
     align-items: flex-start;
     gap: 5px;
 }
 
-.night-stars-container {
+.stars-container {
     display: flex;
     align-items: center;
 }
 
-.night-star1-image {
-    width: 13px;
-    height: 13px;
-}
-
-.night-star2-image {
-    width: 13px;
-    height: 13px;
-}
-
-.night-star3-image {
-    width: 13px;
-    height: 13px;
-}
-
-.night-star4-image {
-    width: 13px;
-    height: 13px;
-}
-
-.night-star5-image {
-    width: 13px;
-    height: 13px;
-}
-
-.night-reviews {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.night-size-buttons-container {
-    display: flex;
-    align-items: center;
-    gap: 16.271px;
-}
-
-.night-button-30ml {
-    display: flex;
-    align-items: center;
-    gap: 4.438px;
-}
-
-.night-button-image-30ml {
-    width: 12.358px;
-    height: 12.573px;
-    fill: #D9D9D9;
-    stroke-width: 1.479px;
-    stroke: #000;
-}
-
-.night-30ml-text {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.night-button-60ml {
-    display: flex;
-    align-items: center;
-    gap: 4.438px;
-}
-
-.night-button-image-60ml {
-    width: 12.358px;
-    height: 12.573px;
-    fill: #D9D9D9;
-    stroke-width: 1.479px;
-    stroke: #000;
-}
-
-.night-60ml-text {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.night-ViewProduct-button{
-    display: flex;
-    height: 39px;
-    padding: 4.438px 57.689px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.396px;
-    align-self: stretch;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}

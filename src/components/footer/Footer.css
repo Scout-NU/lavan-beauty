@@ -1,0 +1,99 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* width: 1440px; */
+  height: 484px;
+  flex-shrink: 0;
+  background-color: #334e3d;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.nav-header {
+  color: var(--Primary-Color, #fefaef);
+  font-family: "Bodoni 72";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-section {
+  display: flex;
+  width: 215.876px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.footer-section a {
+  color: var(--Primary-Color, #fefaef);
+  font-family: "Hiragino Mincho Pro";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.quick-links-button {
+  width: 240px;
+  height: 43px;
+  flex-shrink: 0;
+  background: var(--Primary-Color, #fefaef);
+}
+
+.quick-links-text {
+  color: var(--Secondary-Color, #334e3d);
+  font-family: "Hiragino Mincho Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container input {
+  width: 366.482px;
+  height: 37px;
+  color: var(--Secondary-Color, #334e3d);
+  font-family: "Hiragino Mincho Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  gap: 40px;
+}
+
+.submit-button {
+  color: var(--Secondary-Color, #334e3d);
+  font-family: "Bodoni Moda";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 118px;
+  height: 43px;
+  /* flex-shrink: 0; */
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}

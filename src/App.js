@@ -1,4 +1,7 @@
 import React from "react";
+import "./App.css";
+import Learn from "./pages/learn/Learn";
+import Footer from "./components/footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Learn from "./pages/learn/Learn";
@@ -22,6 +25,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

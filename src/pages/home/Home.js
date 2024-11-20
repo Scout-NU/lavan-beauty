@@ -1,20 +1,56 @@
+import { useState, useEffect } from "react";
 import "./Home.css";
-import left_landing from "../../assets/home/left_landing.png";
-import right_landing from "../../assets/home/right_landing.png";
+import landing from "../../assets/home/landing.png";
+import landing2 from "../../assets/home/landing2.png";
 import product_image from "../../assets/home/product_image.png";
 import pharmacist from "../../assets/home/pharmacist.png";
 import bottom_image from "../../assets/home/bottom_image.png";
 
 function Home() {
+  const landingImages = [
+    { src: landing, alt: "Landing 1" },
+    { src: landing2, alt: "Landing 2" },
+    { src: landing, alt: "Landing 3" },
+    { src: landing2, alt: "Landing 4" },
+    { src: landing, alt: "Landing 5" },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-play effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % landingImages.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="home">
-      {/* Hero section with split product images */}
+      {/* Hero section with image carousel */}
       <div className="landing">
-        <div className="landing-day-cream">
-          <img src={left_landing} alt="Day Cream" />
-        </div>
-        <div className="landing-night-cream">
-          <img src={right_landing} alt="Night Cream" />
+        <div className="carousel">
+          {landingImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className="landing-image"
+              style={{
+                transform: `translateX(${(index - currentIndex) * 100}%)`,
+              }}
+            />
+          ))}
+          <div className="carousel-dots">
+            {landingImages.map((_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
+                onClick={() => setCurrentIndex(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <div className="landing-text">
@@ -45,7 +81,14 @@ function Home() {
       <div className="pharmacist">
         <div className="pharmacist-text">
           <h1>Made by a pharmacist</h1>
-          The intersection of pharmacy and skincare blends science, health, and beauty. Pharmacists' expertise in biochemistry, dermatology, and therapeutic formulations enables them to develop effective skincare products. By understanding active ingredients, dosage forms, and dermal absorption, they create formulations that address conditions like acne, hyperpigmentation, aging, and inflammation at a cellular level. This scientific approach ensures products are both luxurious and highly effective, rooted in pharmaceutical rigor.
+          The intersection of pharmacy and skincare blends science, health, and
+          beauty. Pharmacists' expertise in biochemistry, dermatology, and
+          therapeutic formulations enables them to develop effective skincare
+          products. By understanding active ingredients, dosage forms, and
+          dermal absorption, they create formulations that address conditions
+          like acne, hyperpigmentation, aging, and inflammation at a cellular
+          level. This scientific approach ensures products are both luxurious
+          and highly effective, rooted in pharmaceutical rigor.
         </div>
         <img src={pharmacist} alt="Pharmacist" />
       </div>

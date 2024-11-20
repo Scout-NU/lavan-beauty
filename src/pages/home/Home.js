@@ -45,11 +45,7 @@ function Home() {
       <div className="pharmacist">
         <div className="pharmacist-text">
           <h1>Made by a pharmacist</h1>
-          <p>
-            Crafted by a skilled pharmacist, our Day & Night Cream Duo combines
-            expert knowledge with high-quality ingredients to deliver effective,
-            trustworthy skincare.
-          </p>
+          The intersection of pharmacy and skincare blends science, health, and beauty. Pharmacists' expertise in biochemistry, dermatology, and therapeutic formulations enables them to develop effective skincare products. By understanding active ingredients, dosage forms, and dermal absorption, they create formulations that address conditions like acne, hyperpigmentation, aging, and inflammation at a cellular level. This scientific approach ensures products are both luxurious and highly effective, rooted in pharmaceutical rigor.
         </div>
         <img src={pharmacist} alt="Pharmacist" />
       </div>

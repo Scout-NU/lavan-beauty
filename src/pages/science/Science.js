@@ -1,5 +1,6 @@
 import "./Science.css";
 import topleft from "../../assets/science/Rectangle.png";
+import React from "react";
 
 function Science() {
   return (

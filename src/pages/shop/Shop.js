@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 import "./Shop.css";
+import cresent from "../../assets/shop/cresent.jpg"
+import learnMore from "../../assets/shop/learnMore.jpg"
+import moonProduct from "../../assets/shop/moonProduct.jpg"
+import overlappedMoon from "../../assets/shop/overlapped-moon.jpg"
+import rectangleIndivi from "../../assets/shop/Rectangle-indiv.jpg"
+import rectangleSet from "../../assets/shop/Rectangle-set.jpg"
+import Star from "../../assets/shop/Star.jpg"
+import sunProduct from "../../assets/shop/sun-product.jpg"
+import sun from "../../assets/shop/sun.jpg"
+import viewProductIndiv from "../../assets/shop/view-product-image.jpg"
+import viewProductSet from "../../assets/shop/view-product-set.jpg"
+
 
 function Shop() {
     const carouselSlide = document.querySelector('.carousel-slide');
-    const carouselImages = docuament.querySelectorAll('.carousel-slide img');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
     const prevBtn = document.querySelector('#prevBtn');
     const nextBtn = document.querySelector('#nextBtn');
     function stars() {
         return ( 
         <div className="stars-container">
-            <img className="star-image" src={} alt="star 1" />
-            <img className="star-image" src={} alt="star 2" />
-            <img className="star-image" src={} alt="star 3" />
-            <img className="star-image" src={} alt="star 4" />
-            <img className="star-image" src={} alt="star 5" />
+            <img className="star-image" src={Star} alt="star 1" />
+            <img className="star-image" src={Star} alt="star 2" />
+            <img className="star-image" src={Star} alt="star 3" />
+            <img className="star-image" src={Star} alt="star 4" />
+            <img className="star-image" src={Star} alt="star 5" />
         </div>);
        }
     function buttons() {
@@ -107,7 +119,7 @@ function Shop() {
                             <img className="SunSquare-image" src={} alt="sun square" />
                         </div>
                         <div className="moon">
-                            <img className="MoonCresent-image" src={} alt="moon cresent" />
+                            <img className="MoonCresent-image" src={cresent} alt="moon cresent" />
                             <img className="MoonCircle-image" src={} alt="moon circle" />
                             <img className="MoonSquare-image" src={} alt="moon square" />
                         </div>

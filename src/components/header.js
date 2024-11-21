@@ -38,18 +38,11 @@ function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li className="nav-item">
-                {/* Dropdown for About Us */}
                 <li className="nav-item dropdown">
                   <Link to="/about-us">About Us</Link>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link to="/about-us/mission">Mission</Link>
-                    </li>
-                    <li>
-                      <Link to="/about-us/founder">Founder</Link>
-                    </li>
-                    <li>
-                      <Link to="/about-us/values">Values</Link>
+                      <Link to="/science">Science</Link>
                     </li>
                   </ul>
                 </li>

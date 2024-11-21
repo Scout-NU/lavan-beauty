@@ -72,36 +72,36 @@
 }
 
 .Founder-header {
-  width: 518px;
-  height: 106px;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
-  font-family: Aboreto;
-  font-size: 48px;
+  width: 1128px;
+  color: #FEFAEF;
+  /* heading */
+  font-family: "Bodoni 72";
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   }
 
 .Founder-description {
-  width: 1243px;
+  width: 640px;
   height: 143px;
   flex-shrink: 0;
-  color: #000;
-  font-family: "Abyssinica SIL";
-  font-size: 30px;
+  color: #FEFAEF;
+  /* body */
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   }
 
 .Founder-container {
-  display: inline-flex;
-  padding: 0px 0px 20px 10px;
-  flex-direction: column;
-  align-items: center;
-  gap: 41px;
+  height: 802px;
+  align-self: stretch;
+  width: 1436px;
+  height: 802px;
+  flex-shrink: 0;
+  fill: #334E3D;
 }
 
 

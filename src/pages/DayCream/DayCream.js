@@ -2,6 +2,9 @@ import { useState, useCallback } from "react";
 import "./DayCream.css";
 import placeholder from "../../assets/placeholder.jpg";
 import productPhoto from "../../assets/daycream/productPhoto.png";
+import productPhoto2 from "../../assets/daycream/productPhoto2.png";
+import productPhoto3 from "../../assets/daycream/productPhoto3.png";
+import productPhoto4 from "../../assets/daycream/productPhoto4.png";
 
 // Reusable Components
 /**
@@ -206,9 +209,9 @@ function DayCream() {
 
   const productImages = [
     { src: productPhoto, alt: "Day Cream 1" },
-    { src: productPhoto, alt: "Day Cream 2" },
-    { src: productPhoto, alt: "Day Cream 3" },
-    { src: productPhoto, alt: "Day Cream 4" },
+    { src: productPhoto2, alt: "Day Cream 2" },
+    { src: productPhoto3, alt: "Day Cream 3" },
+    { src: productPhoto4, alt: "Day Cream 4" },
     { src: productPhoto, alt: "Day Cream 5" },
   ];
 

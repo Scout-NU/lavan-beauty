@@ -2,6 +2,9 @@ import { useState, useCallback } from "react";
 import "./NightCream.css";
 import placeholder from "../../assets/placeholder.jpg";
 import productPhoto from "../../assets/nightcream/productPhoto.png";
+import productPhoto2 from "../../assets/nightcream/productPhoto2.png";
+import productPhoto3 from "../../assets/nightcream/productPhoto3.png";
+import productPhoto4 from "../../assets/nightcream/productPhoto4.png";
 
 // Reusable Components
 /**
@@ -206,9 +209,9 @@ function NightCream() {
 
   const productImages = [
     { src: productPhoto, alt: "Night Cream 1" },
-    { src: productPhoto, alt: "Night Cream 2" },
-    { src: productPhoto, alt: "Night Cream 3" },
-    { src: productPhoto, alt: "Night Cream 4" },
+    { src: productPhoto2, alt: "Night Cream 2" },
+    { src: productPhoto3, alt: "Night Cream 3" },
+    { src: productPhoto4, alt: "Night Cream 4" },
     { src: productPhoto, alt: "Night Cream 5" },
   ];
 

@@ -1,6 +1,9 @@
 import "./Home.css";
 import placeholder from "../../assets/placeholder.jpg";
 import React from "react";
+import React from "react";
+import "./Home.css";
+import placeholder from "../../assets/placeholder.jpg";
 
 function Home() {
   return (

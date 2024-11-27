@@ -16,27 +16,24 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h2 className="nav-header">Quick Links</h2>
-          <QuickLinksButton text="Track My Order" />
+          <h2 className="section-header">Quick Links</h2>
           <QuickLinksButton text="My Account" />
           <QuickLinksButton text="Return Policy" />
           <QuickLinksButton text="Shipping Policy" />
         </div>
         <div className="footer-section">
-          <h2 className="nav-header">Customer Care</h2>
-          <a href="#">My Account</a>
-          <a href="#">Shipping Info</a>
+          <h2 className="section-header">Customer Care</h2>
+          <a href="#">Shop Now</a>
+          <a href="#">Products</a>
           <a href="#">Return Policy</a>
-          <a href="#">Terms and Conditions</a>
           <a href="#">Privacy Policy</a>
           <a href="#">FAQ</a>
         </div>
         <div className="footer-section">
-          <h2 className="nav-header">About Lavan</h2>
-          <a href="#">Mission</a>
-          <a href="#">About the Founder</a>
-          <a href="#">Health Benefits</a>
-          <a href="#">Sustainability</a>
+          <h2 className="section-header">About Lavan</h2>
+          <a href="#">Mission Statement</a>
+          <a href="/science">Science</a>
+          <a href="/learn">Ingredients</a>
         </div>
 
         <div className="contact-section">

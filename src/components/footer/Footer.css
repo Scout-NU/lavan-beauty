@@ -1,7 +1,7 @@
 .footer {
   bottom: 0;
   width: 100%;
-  /* width: 1440px; */
+  width: 1440px;
   height: 484px;
   flex-shrink: 0;
   background-color: #334e3d;
@@ -22,11 +22,12 @@
 
 .nav-header {
   color: var(--Primary-Color, #fefaef);
-  font-family: "Bodoni 72";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Bodoni Moda";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
   line-height: normal;
+  text-align: left;
 }
 
 .footer-section {
@@ -48,10 +49,15 @@
 }
 
 .quick-links-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will space the text and icon apart */
   width: 240px;
   height: 43px;
-  flex-shrink: 0;
   background: var(--Primary-Color, #fefaef);
+  border: none;
+  padding: 0 10px;
+  margin: 5px 0;
 }
 
 .quick-links-text {
@@ -96,4 +102,15 @@
 .contact-section {
   display: flex;
   flex-direction: column;
+}
+
+.section-header {
+  color: var(--Primary-Color, #fefaef);
+
+  /* Nav Header */
+  font-family: "Bodoni 72";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

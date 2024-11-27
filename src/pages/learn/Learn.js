@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import "./Learn.css";
 import bottomImage from "../../assets/learn/bottom_image.png";

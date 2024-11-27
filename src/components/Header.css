@@ -5,6 +5,8 @@
   align-items: center;
   flex-shrink: 0;
   background: var(--Secondary-Color, #334e3d);
+  height: 86px;
+  position: relative;
 }
 
 .nav {
@@ -25,9 +27,9 @@
 }
 
 .dropdown-menu {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
-  top: 100%; /* Positioned below the "About Us" link */
+  top: 100%;
   left: 0;
   background-color: #334e3d;
   border-radius: 5px;
@@ -35,7 +37,7 @@
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .dropdown-menu li {
@@ -43,17 +45,21 @@
 }
 
 .dropdown-menu li a {
-  color: #fff;
-  font-size: 14px;
+  color: var(--Primary-Color, #fefaef);
+  text-align: center;
+  font-family: "Bodoni 72";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #fefaef;
-  color: #334e3d;
+  text-decoration: underline;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block; /* Show the dropdown when hovering over "About Us" */
+  display: block;
 }
 
 .nav-item {

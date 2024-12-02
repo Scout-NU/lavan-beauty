@@ -1,11 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import "./Learn.css";
-import middleImage from "../../assets/learn/middle_image.png";
+import bottomImage from "../../assets/learn/bottom_image.png";
 import ingredient from "../../assets/learn/ingredient.png";
 
 function Learn() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  // TODO: this is the ingredient the page lands on
+  const firstItemOnOpen = {
+    name: "chloride",
+    image: ingredient,
+    foundIn: "Night Cream",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+  };
+  const [selectedItem, setSelectedItem] = useState(firstItemOnOpen);
+  // TODO: these are the ingredients that you can modify
   const glossaryItems = [
     {
       name: "chloride",
@@ -79,7 +88,7 @@ function Learn() {
   return (
     <div className="Learn">
       <header className="Learn-header">
-        <p>INGREDIENTS</p>
+        <p>Ingredients</p>
       </header>
 
       {/* Glossary Section */}
@@ -116,23 +125,7 @@ function Learn() {
           )}
         </div>
       </div>
-
-      {/* Science Section */}
-      <div className="Science-container">
-        <img className="Middle-image" src={middleImage} alt="middle" />
-        <header className="Science-header">
-          <p>SCIENCE</p>
-        </header>
-        <div className="Science-description">
-          <p>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore "Sed ut perspiciatis unde omnis iste natus
-            error sit voluptatem accusantium doloremque
-          </p>
-        </div>
-        <button className="Learn-button">Learn More</button>
-      </div>
+      <img className="Bottom-image" src={bottomImage} alt="bottom-image" />
     </div>
   );
 }

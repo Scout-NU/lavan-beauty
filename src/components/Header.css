@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  /* width: 1440px; */
+  width: 1440px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
@@ -90,20 +90,15 @@
 
 .first-half {
   display: flex;
-  /* width: 410px; */
   padding: 0px 40px;
   align-items: center;
   gap: 60px;
   flex-shrink: 0;
-  /* flex-grow: 1; */
 }
 
 .second-half {
-  /* margin-left: 120px; */
   display: flex;
   padding: 0px 40px;
   align-items: center;
   gap: 60px;
-  /* width: 410px; */
-  /* flex-grow: 1; */
 }

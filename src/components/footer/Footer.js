@@ -23,15 +23,18 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h2 className="section-header">Customer Care</h2>
-          <a href="#">Shop Now</a>
-          <a href="#">Products</a>
+          <a href="/shop">Shop Now</a>
+          <a href="/products">Products</a>
+          {/* eslint-disable-next-line */}
           <a href="#">Return Policy</a>
+          {/* eslint-disable-next-line */}
           <a href="#">Privacy Policy</a>
+          {/* eslint-disable-next-line */}
           <a href="#">FAQ</a>
         </div>
         <div className="footer-section">
           <h2 className="section-header">About Lavan</h2>
-          <a href="#">Mission Statement</a>
+          <a href="/about-us">Mission Statement</a>
           <a href="/science">Science</a>
           <a href="/learn">Ingredients</a>
         </div>

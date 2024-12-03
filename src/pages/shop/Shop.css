@@ -1,392 +1,430 @@
 .Shop {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background: #fefaef;
   padding: 20px;
   width: 1440px;
   height: 2619px;
 }
 
 .carousel-container {
-    width: 100%;
-    margin: auto;
-    border: 5px solid black;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  margin: auto;
+  border: 5px solid black;
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel-slide{
-    display: flex;
-    width: 100%;
-    height: 500px;
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
 
-.prevBtn{
-    position: absolute;
-    top: 50px;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.75;
-    cursor: pointer;
+.prevBtn {
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.75;
+  cursor: pointer;
 }
 
-.nextBtn{
-    position: absolute;
-    top: 50px;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.75;
-    cursor: pointer;
+.nextBtn {
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.75;
+  cursor: pointer;
 }
 
-.signature-container{
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 16px;
+.Shop {
+  width: 1440px;
+  height: 3285px;
 }
 
-.signature-first-container{
-    display: flex;
-    width: 703px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+.landing {
+  width: 1465px;
+  height: 641px;
+  flex-shrink: 0;
 }
 
-.signature-header{
-    color: #000;
-    font-family: "Bodoni 72";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.signature-container {
+  display: flex;
+  width: 1340px;
+  align-items: center;
+  gap: 16px;
 }
 
-.signature-description-container{
-    color: #000;
-    font-family: Baskerville;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+.signature-first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
 }
 
-.learnMore-button{
-    display: flex;
-    width: 432px;
-    height: 78px;
-    padding: 10px 153px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: #D9D9D9;
+.signature-header {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.signature-header{
-    color: #000;
-    font-family: "Bodoni 72";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.signature-description-container {
+  color: #000;
+  font-family: Baskerville;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.siganture-second-container{
-    display: flex;
-    width: 741px;
-    align-items: flex-end;
-    gap: 61px;
+.learnMore-button {
+  width: 171px;
+  height: 52px;
+  flex-shrink: 0;
+  border: 0px solid #382e26;
+  background: #382e26;
+
+  /*the text*/
+  color: #fffcfa;
+  text-align: center;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 39px; /* 195% */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
 }
 
-.sun{
-    width: 290px;
-    height: 290px;
-    flex-shrink: 0;
+.signature-header {
+  color: #000;
+  font-family: "Bodoni 72";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.Sun-image{
-    width: 290px;
-    height: 290px;
-    flex-shrink: 0;
-    border-radius: 290px;
-    background: #D9D9D9;
+.signature-second-container {
+  display: flex; /* Use flexbox to arrange items side by side */
+  flex-direction: row; /* Ensure items are laid out in a row */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Align items vertically to the center */
+  gap: 20px; /* Add space between the sun and moon images */
 }
 
-.moon{
-    width: 388.484px;
-    height: 353.327px;
-    flex-shrink: 0;    
+.sun {
+  width: 387px;
+  height: 387px;
+  flex-shrink: 0;
 }
 
-.MoonCresent-image{
-    width: 388.484px;
-    height: 353.327px;
-    flex-shrink: 0;
+.Sun-image {
+  width: 290px;
+  height: 290px;
+  flex-shrink: 0;
+  border-radius: 290px;
+  background: #d9d9d9;
 }
 
-.MoonCircle-image{
-    width: 309.381px;
-    height: 309.381px;
-    flex-shrink: 0;
-    border-radius: 309.381px;
-    background: #D9D9D9;
+.moon {
+  width: 388.484px;
+  height: 353.327px;
+  flex-shrink: 0;
 }
 
-.MoonSquare-image{
-    width: 112px;
-    height: 111px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Baskerville;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.MoonCresent-image {
+  width: 388.484px;
+  height: 353.327px;
+  flex-shrink: 0;
 }
 
-.products-container{
-    display: flex;
-    width: 990px;
-    flex-direction: column;
-    align-items: center;
-    gap: 132px;
+.MoonCircle-image {
+  width: 309.381px;
+  height: 309.381px;
+  flex-shrink: 0;
+  border-radius: 309.381px;
+  background: #d9d9d9;
+}
+
+.MoonSquare-image {
+  width: 112px;
+  height: 111px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Baskerville;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.products-container {
+  display: flex;
+  width: 990px;
+  flex-direction: column;
+  align-items: center;
+  gap: 110px;
+  margin-top: 165px;
 }
 
 .set-image {
-    width: 410px;
-    height: 410px;
-    flex-shrink: 0;
-    background: #D9D9D9;
+  width: 410px;
+  height: 410px;
+  flex-shrink: 0;
+  background: #d9d9d9;
 }
 
 .set-header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 14.332px;
-    align-self: stretch;
-    flex-wrap: wrap;
+  display: flex; /* Enables flexbox */
+  flex-direction: row; /* Aligns items in a row */
+  justify-content: space-between; /* Adds space between the header and price */
+  align-items: center; /* Aligns items vertically to the center */
+  width: 100%; /* Ensures the container spans the full width */
 }
 
-.set-header{
-    flex: 1 0 0;
-    color: #000;
-    font-family: Baskerville;
-    font-size: 46px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+.set-header {
+  flex: 1 0 0;
+  color: #000;
+  font-family: Baskerville;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.set-price-container{
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+.set-price-container {
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .set-second-half {
-    display: flex;
-    width: 485.068px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15.765px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
 .set-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 22.932px;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22.932px;
+  align-self: stretch;
 }
 
 .set-description-text {
-    align-self: stretch;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  align-self: stretch;
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .set-reviews-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 7.166px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7.166px;
 }
-
-
 
 .set-reviews {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-
 .set-ViewProduct-button {
-    display: flex;
-    height: 55.896px;
-    padding: 6.36px 82.682px;
-    justify-content: center;
-    align-items: center;
-    gap: 10.6px;
-    align-self: stretch;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  width: 171px;
+  height: 52px;
+  flex-shrink: 0;
+  align-self: flex-end;
+  border: 0px solid #382e26;
+  background: #382e26;
+
+  /*text*/
+  color: #fffcfa;
+  text-align: center;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 39px; /* 195% */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
 }
 
 .individual-container {
-    display: flex;
-    align-items: center;
-    gap: 238px;
-    align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 168.822px;
 }
 
 .individual-cream-container {
-    display: flex;
-    width: 338.446px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  display: flex;
+  /*width: 410.669px;*/
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24.291px;
 }
 
-
 .individual-cream-image {
-    width: 410.541px;
-    height: 410px;
+  width: 410px;
+  height: 410px;
 }
 
 .individual-header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    align-self: stretch;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12.145px;
+  align-self: stretch;
+  flex-wrap: wrap;
 }
 
 .header {
-    flex: 1 0 0;
-    color: #000;
-    font-family: Baskerville;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+  flex: 1 0 0;
+  color: #382e26;
+
+  /* subheading */
+  font-family: Baskerville;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .individual-price-container {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #382e26;
+
+  /* Prices */
+  font-family: "Hiragino Mincho Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .individual-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 19.433px;
 }
 
 .star-image {
-    width: 13px;
-    height: 13px;
+  width: 13px;
+  height: 13px;
 }
 
 .reviews {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #382e26;
+
+  /* caption */
+  font-family: "Hiragino Mincho Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .indiv-size-buttons-container {
-    display: flex;
-    align-items: center;
-    gap: 16.271px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 19.762px;
+  width: 100%;
 }
 
 .button-image-ml {
-    width: 12.358px;
-    height: 12.573px;
-    fill: #D9D9D9;
-    stroke-width: 1.479px;
-    stroke: #000;
+  width: 14.995px;
+  height: 15.285px;
+  fill: #382e26;
+  stroke-width: 1.797px;
+  stroke: #382e26;
 }
 
 .ml-text {
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #000;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .button-ml {
-    display: flex;
-    align-items: center;
-    gap: 4.438px;
+  display: flex;
+  align-items: center;
+  gap: 4.438px;
 }
 
+.ViewProduct-button {
+  width: 171px;
+  height: 52px;
+  flex-shrink: 0;
+  align-self: flex-end;
+  border: 0px solid #382e26;
+  background: #382e26;
 
-.ViewProduct-button{
-    display: flex;
-    height: 39px;
-    padding: 4.438px 57.689px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.396px;
-    align-self: stretch;
-    color: #000;
-    font-family: "Hiragino Mincho Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  /*text*/
+  color: #fffcfa;
+  text-align: center;
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 39px; /* 195% */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+
+.indiv-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
 }
 
 .individual-description-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
+  color: #382e26;
+
+  /* body */
+  font-family: "Hiragino Mincho Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .individual-reviews-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6.073px;
 }
 
 .stars-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-

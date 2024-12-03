@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import "./Shop.css";
-import cresent from "../../assets/shop/cresent.jpg"
-import learnMore from "../../assets/shop/learnMore.jpg"
-import moonProduct from "../../assets/shop/moonProduct.jpg"
-import overlappedMoon from "../../assets/shop/overlapped-moon.jpg"
-import rectangleIndivi from "../../assets/shop/Rectangle-indiv.jpg"
-import rectangleSet from "../../assets/shop/Rectangle-set.jpg"
-import Star from "../../assets/shop/Star.jpg"
-import sunProduct from "../../assets/shop/sun-product.jpg"
-import sun from "../../assets/shop/sun.jpg"
-import viewProductIndiv from "../../assets/shop/view-product-image.jpg"
-import viewProductSet from "../../assets/shop/view-product-set.jpg"
+import Ellipse1 from "../../assets/shop/Ellipse 1.png"
+import set from "../../assets/shop/set.png"
+import star from "../../assets/shop/star.png"
+import Sun from "../../assets/shop/Sun.png"
+import moon from "../../assets/shop/moon.png"
+import day from "../../assets/shop/day.png"
+import night from "../../assets/shop/night.png"
+import landing from "../../assets/shop/landing.png"
+
 
 
 function Shop() {
@@ -18,26 +16,26 @@ function Shop() {
     const carouselImages = document.querySelectorAll('.carousel-slide img');
     const prevBtn = document.querySelector('#prevBtn');
     const nextBtn = document.querySelector('#nextBtn');
-    function stars() {
+    function Stars() {
         return ( 
         <div className="stars-container">
-            <img className="star-image" src={Star} alt="star 1" />
-            <img className="star-image" src={Star} alt="star 2" />
-            <img className="star-image" src={Star} alt="star 3" />
-            <img className="star-image" src={Star} alt="star 4" />
-            <img className="star-image" src={Star} alt="star 5" />
+            <img className="star-image" src={star} alt="star" />
+            <img className="star-image" src={star} alt="star" />
+            <img className="star-image" src={star} alt="star" />
+            <img className="star-image" src={star} alt="star" />
+            <img className="star-image" src={star} alt="star" />
         </div>);
        }
-    function buttons() {
+    function Buttons() {
         return(<div className="indiv-size-buttons-container">
             <div className="button-ml">
-                <img className="button-image-ml" src={} alt="circle button" />
+                <img className="button-image-ml" src={Ellipse1} alt="circle button" />
                 <div className="ml-text">
                     <p>30 ml</p>
                 </div>
             </div>
             <div className="button-ml">
-                <img className="button-image-ml" src={} alt="circle button" />
+                <img className="button-image-ml" src={Ellipse1} alt="circle button" />
                 <div className="ml-text">
                     <p>60 ml</p>
                 </div>
@@ -45,6 +43,7 @@ function Shop() {
         </div>);
     }
 
+    /*
     let counter = 1;
     const size = carouselImages[0].clientWidth;
 
@@ -76,12 +75,13 @@ function Shop() {
             carouselSlide.Shop.transform = 'translateX(' + (-size * counter) + 'px)';
         }
     })
-
+*/
     return (
-        <div className="Shop">
+            <div className="Shop">
 
-            {/**carousel section */}
-            <div className="carousel-container">
+            
+                {/**carousel section 
+                <div className="carousel-container">
                 <button className="nextBtn" id="nextBtn">
                     <img src="" alt=""></img>
                  </button>
@@ -97,8 +97,9 @@ function Shop() {
                     <img src="" alt=""></img>
                     <img src="" id="firstClone" alt=""></img>
                 </div>
-            </div>
+                </div>*/}
 
+                <img className="landing" src={landing} alt=""/>
             
                 {/* signature collection section*/}
                 <div className="signature-container">
@@ -114,15 +115,8 @@ function Shop() {
                         <button className="learnMore-button">Learn More</button>
                     </div>
                     <div className="signature-second-container">
-                        <div className="sun">
-                            <img className="Sun-image" src={} alt="sun" />
-                            <img className="SunSquare-image" src={} alt="sun square" />
-                        </div>
-                        <div className="moon">
-                            <img className="MoonCresent-image" src={cresent} alt="moon cresent" />
-                            <img className="MoonCircle-image" src={} alt="moon circle" />
-                            <img className="MoonSquare-image" src={} alt="moon square" />
-                        </div>
+                            <img className="Sun" src={Sun} alt="sun" />
+                            <img className="moon" src={moon} alt="moon" />
                     </div>
                 
                 </div>
@@ -130,7 +124,7 @@ function Shop() {
                 <div className="products-container">
                     {/* set section*/}
                     <div className="set-container">
-                        <img className="set-image" src={} alt="set image" />
+                        <img className="set-image" src={set} alt="set image" />
                         <div className="set-second-half">
                             <div className="set-header-container">
                                 <header className="set-header">
@@ -145,13 +139,13 @@ function Shop() {
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                                 </div>
                                 <div className="set-reviews-container">
-                                    <stars/>
+                                    <Stars/>
                                     <div className="set-reviews">
                                         <p>"50 Reviews"</p>
                                     </div>
                                 </div>
                             </div>
-                            <buttons/>
+                            <Buttons/>
                             <button className="set-ViewProduct-button">View Product</button>
                             </div>
                     </div>
@@ -159,7 +153,8 @@ function Shop() {
                     {/* individual product section*/}
                     <div className="individual-container">
                         <div className="individual-cream-container">
-                            <img className="individual-cream-image" src={} alt="day cream image" />
+                            <img className="individual-cream-image" src={day} alt="day cream image" />
+                            
                             <div className="individual-header-container">
                                 <header className="header">
                                     <p>Day Cream</p>
@@ -173,41 +168,43 @@ function Shop() {
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                                 </div>
                                 <div className="individual-reviews-container">
-                                    <stars/>
+                                    <Stars/>
                                     <div className="reviews">
                                         <p>"50 Reviews"</p>
                                     </div>
                                 </div>
                             </div>
                         
-                            <buttons/>
+                            <Buttons/>
                             <button className="ViewProduct-button">View Product</button>
                         </div>
                         
 
                         <div className="individual-cream-container">
-                            <img className="individual-cream-image" src={} alt="night cream image" />
-                            <div className="individual-header-container">
-                                <header className="header">
-                                    <p>Night Cream</p>
-                                </header>
-                                <div className="individual-price-container">
-                                    <p>"$55"</p>
+                            <img className="individual-cream-image" src={night} alt="night cream image" />
+                            <div className="indiv-text-container">
+                                <div className="individual-header-container">
+                                    <header className="header">
+                                        <p>Night Cream</p>
+                                    </header>
+                                    <div className="individual-price-container">
+                                        <p>"$55"</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="individual-description">
-                                <div className="individual-description-text">
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                </div>
-                                <div className="individual-reviews-container">
-                                    <stars/>
-                                    <div className="reviews">
-                                        <p>"50 Reviews"</p>
+                                <div className="individual-description">
+                                    <div className="individual-description-text">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                                    </div>
+                                    <div className="individual-reviews-container">
+                                        <Stars/>
+                                        <div className="reviews">
+                                            <p>"50 Reviews"</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         
-                            <buttons/>
+                            <Buttons/>
                             <button className="ViewProduct-button">View Product</button>
                         </div>
                     </div>

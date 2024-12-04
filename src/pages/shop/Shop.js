@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./Shop.css";
-import Ellipse1 from "../../assets/shop/Ellipse 1.png"
 import set from "../../assets/shop/set.png"
 import star from "../../assets/shop/star.png"
 import Sun from "../../assets/shop/Sun.png"
 import moon from "../../assets/shop/moon.png"
 import day from "../../assets/shop/day.png"
 import night from "../../assets/shop/night.png"
-import landing from "../../assets/shop/landing.png"
+import landing1 from "../../assets/shop/landing1.png"
+import landing2 from "../../assets/shop/landing2.png"
+
 
 
 
@@ -18,12 +19,14 @@ function Shop() {
     const [selectedSizeDay, setSelectedSizeDay] = useState("30ml");
     const [selectedSizeNight, setSelectedSizeNight] = useState("30ml");
     const landingImages = [
-        { src: landing, alt: "Landing 1" },
-        { src: landing, alt: "Landing 2" },
-        { src: landing, alt: "Landing 3" },
-        { src: landing, alt: "Landing 4" },
-        { src: landing, alt: "Landing 5" },
+        { src: landing1, alt: "Landing 1" },
+        { src: landing2, alt: "Landing 2" },
+        { src: landing1, alt: "Landing 3" },
+        { src: landing1, alt: "Landing 4" },
+        { src: landing1, alt: "Landing 5" },
       ];
+
+      const [currentIndex, setCurrentIndex] = useState(0);
 
       const handleCarouselChange = (increment) => {
         setCurrentIndex((prev) => {
@@ -32,8 +35,10 @@ function Shop() {
           if (newIndex >= landingImages.length) return 0;
           return newIndex;
         });
-
-
+      };
+      
+      
+      
     const SizeButton = ({ isSelected }) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -77,11 +82,36 @@ function Shop() {
     }
 
     return (
-            <div className="Shop">
-                {/* Hero section with image carousel */}
-      <div className="landing">
-        <div className="carousel">
-          {landingImages.map((image, index) => (
+      <div className="Shop">
+        {/* Hero section with image carousel */}
+        <div className="landing">
+          <div className="home-carousel">
+            <button
+              className="home-carousel-arrow prev"
+              onClick={() => handleCarouselChange(-1)}
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="42"
+                viewBox="0 0 24 42"
+                fill="none"
+                >
+                <path
+                  d="M2.14636 20.5135L22 1.99998"
+                  stroke="#FEFAEF"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2 20.6556L21.8286 39.9996"
+                  stroke="#FEFAEF"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            {landingImages.map((image, index) => (
             <img
               key={index}
               src={image.src}
@@ -92,11 +122,37 @@ function Shop() {
               }}
             />
           ))}
-          <div className="carousel-dots">
+
+          <button
+            className="home-carousel-arrow next"
+            onClick={() => handleCarouselChange(1)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="42"
+              viewBox="0 0 24 42"
+              fill="none"
+            >
+              <path
+                d="M21.8536 20.5135L2.00001 1.99998"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M22 20.6556L2.17141 39.9996"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div className="home-carousel-dots">
             {landingImages.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
+                className={`home-carousel-dot ${index === currentIndex ? "active" : ""}`}
                 onClick={() => setCurrentIndex(index)}
               />
             ))}

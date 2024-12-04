@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import landing from "../../assets/home/landing.png";
 import landing2 from "../../assets/home/landing2.png";
@@ -17,20 +17,45 @@ function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-play effect
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % landingImages.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
+  const handleCarouselChange = (increment) => {
+    setCurrentIndex((prev) => {
+      const newIndex = prev + increment;
+      if (newIndex < 0) return landingImages.length - 1;
+      if (newIndex >= landingImages.length) return 0;
+      return newIndex;
+    });
+  };
 
   return (
     <div className="home">
       {/* Hero section with image carousel */}
       <div className="landing">
-        <div className="carousel">
+        <div className="home-carousel">
+          <button
+            className="home-carousel-arrow prev"
+            onClick={() => handleCarouselChange(-1)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="42"
+              viewBox="0 0 24 42"
+              fill="none"
+            >
+              <path
+                d="M2.14636 20.5135L22 1.99998"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 20.6556L21.8286 39.9996"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
           {landingImages.map((image, index) => (
             <img
               key={index}
@@ -42,11 +67,36 @@ function Home() {
               }}
             />
           ))}
-          <div className="carousel-dots">
+          <button
+            className="home-carousel-arrow next"
+            onClick={() => handleCarouselChange(1)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="42"
+              viewBox="0 0 24 42"
+              fill="none"
+            >
+              <path
+                d="M21.8536 20.5135L2.00001 1.99998"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M22 20.6556L2.17141 39.9996"
+                stroke="#FEFAEF"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div className="home-carousel-dots">
             {landingImages.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
+                className={`home-carousel-dot ${index === currentIndex ? "active" : ""}`}
                 onClick={() => setCurrentIndex(index)}
               />
             ))}
@@ -58,9 +108,9 @@ function Home() {
       </div>
 
       {/* Product showcase section */}
-      <div className="product">
+      <div className="home-product">
         <img src={product_image} alt="Day and Night Cream Set" />
-        <div className="product-info">
+        <div className="product-information">
           <h1>Day & Night Set Name</h1>
           <p className="product-price">$36</p>
           <p className="product-description">

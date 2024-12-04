@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import "./Learn.css";
 import bottomImage from "../../assets/learn/bottom_image.png";
@@ -111,7 +110,11 @@ function Learn() {
           </ul>
           {selectedItem && (
             <div className="Glossary-image-container">
-              <img src={selectedItem.image} className="Glossary-image" />
+              <img
+                src={selectedItem.image}
+                className="Glossary-image"
+                alt={selectedItem.name}
+              />
               <div className="Glossary-text-container">
                 <h3 className="Glossary-name">{selectedItem.name}</h3>
                 <p className="Glossary-description">

@@ -49,10 +49,74 @@
   height: 3285px;
 }
 
+/* Landing section */
 .landing {
-  width: 1465px;
-  height: 641px;
-  flex-shrink: 0;
+  display: flex;
+  position: relative;
+}
+
+.home-carousel {
+  position: relative;
+  width: 100%;
+  height: 40.0625rem;
+  overflow: hidden;
+}
+
+.home-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-carousel-arrow.prev {
+  left: 1.875rem;
+}
+
+.home-carousel-arrow.next {
+  right: 2.5rem;
+}
+
+.landing-image {
+  position: absolute;
+  height: 40.0625rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-carousel-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-carousel-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(254, 250, 239, 0.6);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.home-carousel-dot.active {
+  background-color: var(--color-bg);
+}
+
+.landing-text {
+  color: var(--color-text);
+  text-align: center;
+  font-family: var(--font-baskerville);
+  font-size: var(--font-size-large);
+  font-style: italic;
+  margin: 3.12rem 0;
 }
 
 .signature-container {
@@ -93,6 +157,7 @@
   flex-shrink: 0;
   border: 0px solid #382e26;
   background: #382e26;
+  text-decoration: none;
 
   /*the text*/
   color: #fffcfa;
@@ -261,6 +326,7 @@
   align-self: flex-end;
   border: 0px solid #382e26;
   background: #382e26;
+  text-decoration: none;
 
   /*text*/
   color: #fffcfa;
@@ -354,6 +420,8 @@
   align-items: center;
   gap: 19.762px;
   width: 100%;
+  border: none; /* Remove button border */
+  background: transparent;
 }
 
 .button-image-ml {
@@ -362,6 +430,18 @@
   fill: #382e26;
   stroke-width: 1.797px;
   stroke: #382e26;
+}
+
+.indiv-size-buttons-container button {
+  border: none; /* Remove button border */
+  background: transparent; /* Remove any background */
+  padding: 0; /* Remove internal padding */
+  margin: 0; /* Remove external margin */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.indiv-size-buttons-container svg {
+  display: block; /* Remove inline box space */
 }
 
 .ml-text {
@@ -386,6 +466,7 @@
   align-self: flex-end;
   border: 0px solid #382e26;
   background: #382e26;
+  text-decoration: none;
 
   /*text*/
   color: #fffcfa;

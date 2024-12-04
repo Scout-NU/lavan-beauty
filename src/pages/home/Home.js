@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import landing from "../../assets/home/landing.png";
 import landing2 from "../../assets/home/landing2.png";
@@ -60,7 +60,7 @@ function Home() {
       {/* Product showcase section */}
       <div className="product">
         <img src={product_image} alt="Day and Night Cream Set" />
-        <div className="product-info">
+        <div className="product-information">
           <h1>Day & Night Set Name</h1>
           <p className="product-price">$36</p>
           <p className="product-description">

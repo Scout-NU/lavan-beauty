@@ -23,7 +23,7 @@
 
 /* Heading styles */
 .landing-text,
-.product-info h1,
+.product-information h1,
 .pharmacist-text h1 {
   font-weight: 400;
   line-height: normal;
@@ -105,11 +105,11 @@
   flex-shrink: 0;
 }
 
-.product-info {
+.product-information {
   margin: 7.19rem 4.6rem 0 6.03rem;
 }
 
-.product-info h1 {
+.product-information h1 {
   color: var(--color-text);
   font-family: var(--font-baskerville);
   font-size: var(--font-size-large);

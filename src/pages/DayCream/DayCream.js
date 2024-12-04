@@ -1,10 +1,10 @@
 import { useState, useCallback } from "react";
-import "./NightCream.css";
+import "./DayCream.css";
 import placeholder from "../../assets/placeholder.jpg";
-import productPhoto from "../../assets/nightcream/productPhoto.png";
-import productPhoto2 from "../../assets/nightcream/productPhoto2.png";
-import productPhoto3 from "../../assets/nightcream/productPhoto3.png";
-import productPhoto4 from "../../assets/nightcream/productPhoto4.png";
+import productPhoto from "../../assets/daycream/productPhoto.png";
+import productPhoto2 from "../../assets/daycream/productPhoto2.png";
+import productPhoto3 from "../../assets/daycream/productPhoto3.png";
+import productPhoto4 from "../../assets/daycream/productPhoto4.png";
 
 // Reusable Components
 /**
@@ -203,16 +203,16 @@ const cycleIndex = (current, total, increment) => {
   return next;
 };
 
-function NightCream() {
+function DayCream() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedSize, setSelectedSize] = useState("30ml");
 
   const productImages = [
-    { src: productPhoto, alt: "Night Cream 1" },
-    { src: productPhoto2, alt: "Night Cream 2" },
-    { src: productPhoto3, alt: "Night Cream 3" },
-    { src: productPhoto4, alt: "Night Cream 4" },
-    { src: productPhoto, alt: "Night Cream 5" },
+    { src: productPhoto, alt: "Day Cream 1" },
+    { src: productPhoto2, alt: "Day Cream 2" },
+    { src: productPhoto3, alt: "Day Cream 3" },
+    { src: productPhoto4, alt: "Day Cream 4" },
+    { src: productPhoto, alt: "Day Cream 5" },
   ];
 
   const ingredients = [
@@ -251,14 +251,14 @@ function NightCream() {
   }, []);
 
   return (
-    <div className="night-cream">
+    <div className="day-cream">
       {/* Breadcrumb navigation */}
       <div className="breadcrumb">
         <ol>
           <li>
             <a href="/">Products</a>
           </li>
-          <li>Night Cream</li>
+          <li>Day Cream</li>
         </ol>
       </div>
 
@@ -345,7 +345,7 @@ function NightCream() {
         <div className="product-details">
           <div className="product-info">
             <div className="title-and-price">
-              <h2>Night Cream</h2>
+              <h2>Day Cream</h2>
               <span className="price">$55</span>
             </div>
             <div className="product-details-text">
@@ -389,4 +389,4 @@ function NightCream() {
   );
 }
 
-export default NightCream;
+export default DayCream;

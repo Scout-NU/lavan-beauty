@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: #fefaef;
   padding: 20px;
   font-family: Arial, sans-serif;
   width: 1436px;
@@ -14,10 +14,10 @@
 .Science-header {
   color: #000;
   text-align: center;
-  font-family: Aboreto;
-  font-size: 40px;
+  font-family: "Bodoni 72";
+  font-size: 64px;
   font-style: normal;
-  /* font-weight: 100; */
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -39,7 +39,7 @@
 .Top-description {
   flex-direction: column;
   justify-content: center;
-  color: #000;
+  color: #334e3d;
   font-family: Didot;
   /* font-size: 30px; */
   font-style: normal;
@@ -60,7 +60,7 @@
 .Middle-description {
   flex-direction: column;
   justify-content: center;
-  color: #000;
+  color: #334e3d;
   font-family: Didot;
   /* font-size: 30px; */
   font-style: normal;

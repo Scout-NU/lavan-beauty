@@ -13,6 +13,76 @@
   align-self: stretch;
   }
 
+/* Landing section */
+.landing {
+  display: flex;
+  position: relative;
+}
+
+.home-carousel {
+  position: relative;
+  width: 100%;
+  height: 40.0625rem;
+  overflow: hidden;
+}
+
+.home-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-carousel-arrow.prev {
+  left: 1.875rem;
+}
+
+.home-carousel-arrow.next {
+  right: 2.5rem;
+}
+
+.landing-image {
+  position: absolute;
+  height: 40.0625rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-carousel-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-carousel-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(254, 250, 239, 0.6);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.home-carousel-dot.active {
+  background-color: var(--color-bg);
+}
+
+.landing-text {
+  color: var(--color-text);
+  text-align: center;
+  font-family: var(--font-baskerville);
+  font-size: var(--font-size-large);
+  font-style: italic;
+  margin: 3.12rem 0;
+}
+
 .second-half {
   margin-top: 53px;
   height: 714px;
@@ -46,11 +116,16 @@ margin: 0 auto;
 }
 
 .Learn-more {
+  display: flex;
   width: 205px;
   height: 52px;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
+  text-decoration: none;
   border: 0px solid #382E26;
   background: #382E26;
+
   color: #FFFCFA;
   text-align: center;
   font-family: "Hiragino Mincho Pro";
@@ -59,8 +134,7 @@ margin: 0 auto;
   font-weight: 600;
   line-height: 39px; /* 195% */
   letter-spacing: 0.4px;
-  text-transform: capitalize; 
-  margin-top: 100px;
+  text-transform: capitalize;
 }
 
 .MissionStatement-description {

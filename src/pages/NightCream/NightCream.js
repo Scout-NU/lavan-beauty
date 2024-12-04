@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import "./NightCream.css";
 import placeholder from "../../assets/placeholder.jpg";
 import productPhoto from "../../assets/nightcream/productPhoto.png";

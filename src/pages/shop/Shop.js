@@ -8,6 +8,8 @@ import day from "../../assets/shop/day.png"
 import night from "../../assets/shop/night.png"
 import landing1 from "../../assets/shop/landing1.png"
 import landing2 from "../../assets/shop/landing2.png"
+import image from "../../assets/shop/image.png"
+
 
 
 
@@ -19,14 +21,14 @@ function Shop() {
     const [selectedSizeDay, setSelectedSizeDay] = useState("30ml");
     const [selectedSizeNight, setSelectedSizeNight] = useState("30ml");
     const landingImages = [
-        { src: landing1, alt: "Landing 1" },
-        { src: landing2, alt: "Landing 2" },
+        { src: landing2, alt: "Landing 1" },
+        { src: image, alt: "Landing 2" },
         { src: landing1, alt: "Landing 3" },
         { src: landing1, alt: "Landing 4" },
         { src: landing1, alt: "Landing 5" },
       ];
 
-      const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
       const handleCarouselChange = (increment) => {
         setCurrentIndex((prev) => {
@@ -37,7 +39,7 @@ function Shop() {
         });
       };
       
-      
+      console.log(currentIndex);
       
     const SizeButton = ({ isSelected }) => (
         <svg
@@ -117,9 +119,9 @@ function Shop() {
               src={image.src}
               alt={image.alt}
               className="landing-image"
-              style={{
-                transform: `translateX(${(index - currentIndex) * 100}%)`,
-              }}
+              // style={{
+              //   transform: `translateX(${(index - currentIndex) * 100}%)`,
+              // }}
             />
           ))}
 

@@ -151,11 +151,9 @@
   }
   
   .landing-image {
-    border: 2px solid green; /* Debugging */
-    height: auto; /* Temporarily ensure it fits its container */
-    width: auto;
-    position: relative; /* Temporarily make positioning normal */
-    transition: none;
+    position: absolute;
+  height: 40.0625rem;
+  transition: transform 0.5s ease-in-out;
   }
   
   

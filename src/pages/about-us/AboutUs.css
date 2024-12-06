@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didot&display=swap");
+
+.AboutUs-container {
+  .AboutUs {
+    display: flex;
+    height: 1595px;
+    width: 1436px;
+    padding: 84px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+    align-self: stretch;
+    background: #fefaef;
+  }
+
+  .landing {
+    display: flex;
+    position: relative;
+  }
+
+  .home-carousel {
+    position: relative;
+    width: 100%;
+    height: 40.0625rem;
+    overflow: hidden;
+  }
+
+  .home-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .home-carousel-arrow.prev {
+    left: 1.875rem;
+  }
+
+  .home-carousel-arrow.next {
+    right: 2.5rem;
+  }
+
+  .landing-image {
+    position: absolute;
+    height: 40.0625rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .home-carousel-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-carousel-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(254, 250, 239, 0.6);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .home-carousel-dot.active {
+    background-color: var(--color-bg);
+  }
+
+  .landing-text {
+    color: var(--color-text);
+    text-align: center;
+    font-family: var(--font-baskerville);
+    font-size: var(--font-size-large);
+    font-style: italic;
+    margin: 3.12rem 0;
+  }
+
+  .second-half {
+    margin-top: 53px;
+    height: 714px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+
+  .about-us-container {
+    display: flex;
+    /*width: 974px;*/
+    padding-top: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70;
+    margin-left: 257;
+  }
+
+  .About-Us-header {
+    color: #334e3d;
+    text-align: center;
+
+    /* heading */
+    font-family: "Bodoni 72";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .Learn-more {
+    display: flex;
+    width: 205px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    border: 0px solid #382e26;
+    background: #382e26;
+
+    color: #fffcfa;
+    text-align: center;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39px; /* 195% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+  }
+
+  .MissionStatement-description {
+    width: 573px;
+    height: 133px;
+    flex-shrink: 0;
+    color: #334e3d;
+    font-family: "Hiragino Mincho Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    gap: 174;
+    margin-top: 72px;
+  }
+
+  .MissionStatement-image {
+    width: 582px;
+    height: 557px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  .MissionStatement-container {
+    display: inline-flex;
+    padding: 8px 73px 0px 108px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 98px;
+  }
+
+  .Founder-image {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+  }
+
+  .Founder-header {
+    align-self: stretch;
+    color: #fefaef;
+
+    /* heading */
+    font-family: "Bodoni 72";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .Founder-left {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+  }
+
+  .Founder-description {
+    width: 640px;
+    color: #fefaef;
+
+    /* body */
+    font-family: "Hiragino Mincho Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .Founder-items {
+    display: flex;
+    width: 1204px;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 64px;
+  }
+
+  .Founder-container {
+    display: flex;
+    width: 1436px;
+    height: 661px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #334e3d;
+    padding-left: 108px;
+  }
+}

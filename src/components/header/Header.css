@@ -104,8 +104,64 @@
   gap: 60px;
 }
 
-@media (min-width: 1440px) {
-  .header {
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-left: auto; /* Push the hamburger icon to the right */
+}
+
+.hamburger-menu img {
+  width: 30px; /* Adjust this to fit the image */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    display: none; /* Hide navigation items by default */
+    flex-direction: column;
+    position: absolute;
+    top: 86px; /* Position below the header */
+    right: 0;
+    background-color: #334e3d;
     width: 100%;
+  }
+
+  .nav-list.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-item {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .lavan-beauty {
+    font-size: 40px; /* Adjust size of "Lavan Beauty" */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Align "Lavan Beauty" in the center on mobile */
+  .first-half,
+  .second-half {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    text-align: left;
+    padding: 10px 20px;
   }
 }

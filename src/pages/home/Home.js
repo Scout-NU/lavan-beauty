@@ -56,17 +56,11 @@ function Home() {
               />
             </svg>
           </button>
-          {landingImages.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className="landing-image"
-              style={{
-                transform: `translateX(${(index - currentIndex) * 100}%)`,
-              }}
-            />
-          ))}
+          <img
+            {...landingImages[currentIndex]}
+            className="landing-image"
+            alt="Product"
+          />
           <button
             className="home-carousel-arrow next"
             onClick={() => handleCarouselChange(1)}
@@ -111,7 +105,7 @@ function Home() {
       <div className="home-product">
         <img src={product_image} alt="Day and Night Cream Set" />
         <div className="product-information">
-          <h1>Day & Night Set Name</h1>
+          <h1>Day & Night Cream Set</h1>
           <p className="product-price">$36</p>
           <p className="product-description">
             Experience the ultimate skincare transformation with our Day & Night
@@ -120,7 +114,7 @@ function Home() {
           </p>
           <button
             className="view-product"
-            onClick={() => (window.location.href = "/")}
+            onClick={() => (window.location.href = "/shop")}
           >
             View Product
           </button>

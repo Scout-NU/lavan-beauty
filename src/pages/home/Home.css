@@ -16,7 +16,6 @@
 
 /* Common styles */
 .home {
-  max-width: 90rem;
   width: 100%;
   background-color: var(--color-bg);
 }
@@ -49,10 +48,10 @@
 }
 
 .home-carousel {
-  position: relative;
   width: 100%;
-  height: 40.0625rem;
+  height: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .home-carousel-arrow {
@@ -74,8 +73,10 @@
 }
 
 .landing-image {
-  position: absolute;
-  height: 40.0625rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -195,8 +196,96 @@
 
 @media (max-width: 768px) {
   .landing,
-  .product,
+  .home-product,
   .pharmacist {
+    display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+
+  /* Typography */
+  .landing-text,
+  .product-information h1,
+  .pharmacist-text h1 {
+    font-size: var(--font-size-large);
+    margin: 0;
+  }
+
+  .home-carousel {
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  .landing-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .landing-text {
+    margin: 3.75rem 2.56rem 3.69rem 3.44rem;
+  }
+
+  .home-product {
+    display: flex;
+    margin: 0 1.19rem 0 1.31rem;
+    padding: 1rem;
+  }
+
+  .home-product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-information {
+    margin: 3rem 0.69rem 3.75rem 0;
+  }
+
+  .product-price {
+    font-weight: 600;
+    margin: 0.9rem 0 0.62rem 0;
+  }
+
+  .product-description {
+    margin: 0 0 1.54rem 0;
+  }
+
+  .view-product {
+    width: 10.6875rem;
+    height: 3.25rem;
+    font-weight: 600;
+    line-height: 2.4375rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .pharmacist {
+    padding: 1rem;
+  }
+
+  .pharmacist img {
+    order: -1; 
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 2.81rem auto 1.56rem auto;
+    padding: 0;
+  }
+
+  .pharmacist-text {
+    margin: 0 2.69rem 3.19rem 3.06rem;
+  }
+
+  .pharmacist-text h1 {
+    margin-bottom: 1.56rem;
+  }
+
+  .bottom-image {
+    margin: 0;
+  }
+
+  .bottom-image img {
+    width: 100%;
+    height: auto;
   }
 }

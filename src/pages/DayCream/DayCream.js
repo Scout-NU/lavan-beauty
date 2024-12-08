@@ -63,7 +63,12 @@ function ReviewCarousel({ reviews }) {
     );
   }, []);
 
-  const visibleReviews = reviews.slice(currentIndex, currentIndex + 2);
+  const isMobile = window.innerWidth <= 768;
+  const itemsToShow = isMobile ? 1 : 2;
+  const visibleReviews = reviews.slice(
+    currentIndex,
+    currentIndex + itemsToShow,
+  );
 
   return (
     <div className="product-reviews">
@@ -256,7 +261,7 @@ function DayCream() {
       <div className="breadcrumb">
         <ol>
           <li>
-            <a href="/">Products</a>
+            <a href="/shop">Products</a>
           </li>
           <li>Day Cream</li>
         </ol>

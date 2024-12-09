@@ -103,3 +103,9 @@
   align-items: center;
   gap: 60px;
 }
+
+@media (min-width: 1440px) {
+  .header {
+    width: 100%;
+  }
+}

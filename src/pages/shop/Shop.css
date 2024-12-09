@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   height: 3285px;
   background: #fefaef;
 }
 
 .carousel-container {
-  width: 100% !important;
-  max-width: 1440px;
+  width: 100vw !important;
+  /* max-width: 1440px; */
   margin: 0 auto;
   position: relative;
   height: 40.0625rem;
@@ -446,4 +446,10 @@
 .stars-container {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .shop-container {
+    width: 100%;
+  }
 }

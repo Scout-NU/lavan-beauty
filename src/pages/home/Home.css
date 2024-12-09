@@ -16,7 +16,7 @@
 
 /* Common styles */
 .home {
-  max-width: 90rem;
+  /* max-width: 90rem; */
   width: 100%;
   background-color: var(--color-bg);
 }
@@ -53,6 +53,15 @@
   width: 100%;
   height: 40.0625rem;
   overflow: hidden;
+}
+
+.home-carousel .landing-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .home-carousel-arrow {
@@ -198,5 +207,11 @@
   .product,
   .pharmacist {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+    width: 100%;
   }
 }

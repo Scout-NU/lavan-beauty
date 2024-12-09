@@ -225,3 +225,9 @@
     padding-left: 108px;
   }
 }
+
+@media (min-width: 1440px) {
+  .AboutUs {
+    width: 100%;
+  }
+}

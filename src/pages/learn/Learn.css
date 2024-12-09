@@ -140,3 +140,9 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media (min-width: 1440px) {
+  .Learn {
+    width: 100%;
+  }
+}

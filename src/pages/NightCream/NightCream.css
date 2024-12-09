@@ -386,3 +386,9 @@
 .review-dot.active {
   background: var(--color-primary);
 }
+
+@media (min-width: 1440px) {
+  .night-cream {
+    width: 100%;
+  }
+}

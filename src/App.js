@@ -9,7 +9,7 @@ import NightCream from "./pages/NightCream/NightCream";
 import Science from "./pages/science/Science";
 import Shop from "./pages/shop/Shop";
 import Header from "./components/header/header";
-import AboutUs from './pages/about-us/AboutUs';
+import AboutUs from "./pages/about-us/AboutUs";
 
 function App() {
   return (

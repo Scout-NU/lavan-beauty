@@ -141,8 +141,58 @@
   line-height: normal;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 600px) {
   .Learn {
+  }
+
+  .Learn-header {
+    font-size: 36px; /* Reduce font size on small screens */
+    margin-bottom: 15px;
+  }
+
+  .Glossary-container {
+    flex-direction: column; /* Stack glossary list and content */
+    align-items: stretch;
+    padding: 10px; /* Less padding */
+  }
+
+  .Glossary-content {
+    flex-direction: column; /* Stack the items vertically on smaller screens */
+    gap: 20px;
     width: 100%;
+    align-items: stretch;
+  }
+
+  .Glossary-item {
+    font-size: 16px; /* Smaller font size for mobile */
+    padding: 8px;
+  }
+
+  .Glossary-image-container {
+  }
+
+  .Glossary-image {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .Glossary-text-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .Glossary-name {
+    font-size: 20px; /* Smaller font for glossary name on mobile */
+  }
+
+  .Bottom-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .Learn-button {
+    width: 100%; /* Full width for the button on mobile */
+    height: 50px;
+    font-size: 18px;
   }
 }

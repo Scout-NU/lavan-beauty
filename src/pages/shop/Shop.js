@@ -63,14 +63,14 @@ function Carousel() {
           <path
             d="M2.14636 20.5135L22 1.99998"
             stroke="#FEFAEF"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
           <path
             d="M2 20.6556L21.8286 39.9996"
             stroke="#FEFAEF"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
         </svg>
       </button>
@@ -85,14 +85,14 @@ function Carousel() {
           <path
             d="M21.8536 20.5135L2.00001 1.99998"
             stroke="#FEFAEF"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
           <path
             d="M22 20.6556L2.17141 39.9996"
             stroke="#FEFAEF"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
         </svg>
       </button>
@@ -144,12 +144,13 @@ function Shop() {
       </div>
     );
   }
+
   function Buttons({ selectedSize, setSelectedSize }) {
     const sizes = ["30ml", "60ml"];
     return (
       <div className="indiv-size-buttons-container">
         {sizes.map((size) => (
-          <span className="button-ml">
+          <span className="button-ml" key={size}>
             <button onClick={() => setSelectedSize(size)}>
               <SizeButton isSelected={selectedSize === size} />
             </button>
@@ -161,9 +162,9 @@ function Shop() {
   }
 
   return (
-    <div className="Shop">
+    <div className="shop-container">
       {/* Hero section with image carousel */}
-      <div className="landing">
+      <div className="landing-container">
         <Carousel />
       </div>
 
@@ -178,13 +179,13 @@ function Shop() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
             </div>
           </div>
-          <a href="/science" className="learnMore-button">
+          <a href="/science" className="learn-more-button">
             Learn More
           </a>
         </div>
         <div className="signature-second-container">
-          <img className="Sun" src={Sun} alt="sun" />
-          <img className="moon" src={moon} alt="moon" />
+          <img className="sun-image" src={Sun} alt="sun" />
+          <img className="moon-image" src={moon} alt="moon" />
         </div>
       </div>
 
@@ -219,8 +220,7 @@ function Shop() {
               selectedSize={selectedSizeSet}
               setSelectedSize={setSelectedSizeSet}
             />
-            {/*TODO: add a link*/}
-            <a href="/" className="set-ViewProduct-button">
+            <a href="/" className="set-view-product-button">
               View Product
             </a>
           </div>
@@ -236,7 +236,7 @@ function Shop() {
             />
 
             <div className="individual-header-container">
-              <header className="header">
+              <header className="individual-header">
                 <p>Day Cream</p>
               </header>
               <div className="individual-price-container">
@@ -263,7 +263,7 @@ function Shop() {
               selectedSize={selectedSizeDay}
               setSelectedSize={setSelectedSizeDay}
             />
-            <a href="/daycream" className="ViewProduct-button">
+            <a href="/daycream" className="view-product-button">
               View Product
             </a>
           </div>
@@ -276,7 +276,7 @@ function Shop() {
             />
             <div className="indiv-text-container">
               <div className="individual-header-container">
-                <header className="header">
+                <header className="individual-header">
                   <p>Night Cream</p>
                 </header>
                 <div className="individual-price-container">
@@ -304,7 +304,7 @@ function Shop() {
               selectedSize={selectedSizeNight}
               setSelectedSize={setSelectedSizeNight}
             />
-            <a href="/nightcream" className="ViewProduct-button">
+            <a href="/nightcream" className="view-product-button">
               View Product
             </a>
           </div>

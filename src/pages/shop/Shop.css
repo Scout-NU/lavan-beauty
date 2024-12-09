@@ -1,4 +1,4 @@
-.Shop {
+.shop-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,8 @@
   background: white;
 }
 
-.landing {
+/* Landing section styles */
+.landing-container {
   display: flex;
   position: relative;
 }
@@ -95,6 +96,7 @@
   margin: 3.12rem 0;
 }
 
+/* Signature component styles */
 .signature-container {
   display: flex;
   width: 1340px;
@@ -127,22 +129,20 @@
   line-height: normal;
 }
 
-.learnMore-button {
+.learn-more-button {
   width: 171px;
   height: 52px;
   flex-shrink: 0;
   border: 0px solid #382e26;
   background: #382e26;
   text-decoration: none;
-
-  /*the text*/
   color: #fffcfa;
   text-align: center;
   font-family: "Hiragino Mincho Pro";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 39px; /* 195% */
+  line-height: 39px;
   letter-spacing: 0.4px;
   text-transform: capitalize;
 }
@@ -157,25 +157,26 @@
 }
 
 .signature-second-container {
-  display: flex; /* Use flexbox to arrange items side by side */
-  flex-direction: row; /* Ensure items are laid out in a row */
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Align items vertically to the center */
-  gap: 20px; /* Add space between the sun and moon images */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.sun {
+.sun-image {
   width: 387px;
   height: 387px;
   flex-shrink: 0;
 }
 
-.moon {
+.moon-image {
   width: 388.484px;
   height: 353.327px;
   flex-shrink: 0;
 }
 
+/* Product set section styles */
 .set-container {
   display: flex;
   align-items: flex-start;
@@ -211,8 +212,6 @@
   width: 437px;
   color: #382e26;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  /* subheading */
   font-family: Baskerville;
   font-size: 46px;
   font-style: italic;
@@ -222,8 +221,6 @@
 
 .set-price-container {
   color: #382e26;
-
-  /* Prices */
   font-family: "Hiragino Mincho Pro";
   font-size: 24px;
   font-style: normal;
@@ -273,7 +270,7 @@
   line-height: normal;
 }
 
-.set-ViewProduct-button {
+.set-view-product-button {
   width: 171px;
   height: 52px;
   flex-shrink: 0;
@@ -281,19 +278,18 @@
   border: 0px solid #382e26;
   background: #382e26;
   text-decoration: none;
-
-  /*text*/
   color: #fffcfa;
   text-align: center;
   font-family: "Hiragino Mincho Pro";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 39px; /* 195% */
+  line-height: 39px;
   letter-spacing: 0.4px;
   text-transform: capitalize;
 }
 
+/* Individual product section styles */
 .individual-container {
   display: flex;
   align-items: center;
@@ -302,7 +298,6 @@
 
 .individual-cream-container {
   display: flex;
-  /*width: 410.669px;*/
   flex-direction: column;
   align-items: flex-start;
   gap: 24.291px;
@@ -317,17 +312,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   gap: 12.145px;
   align-self: stretch;
   flex-wrap: wrap;
 }
 
-.header {
+.individual-header {
   flex: 1 0 0;
   color: #382e26;
-
-  /* subheading */
   font-family: Baskerville;
   font-size: 46px;
   font-style: italic;
@@ -337,8 +329,6 @@
 
 .individual-price-container {
   color: #382e26;
-
-  /* Prices */
   font-family: "Hiragino Mincho Pro";
   font-size: 24px;
   font-style: normal;
@@ -359,8 +349,6 @@
 
 .reviews {
   color: #382e26;
-
-  /* caption */
   font-family: "Hiragino Mincho Pro";
   font-size: 14px;
   font-style: normal;
@@ -374,7 +362,7 @@
   align-items: center;
   gap: 19.762px;
   width: 100%;
-  border: none; /* Remove button border */
+  border: none;
   background: transparent;
 }
 
@@ -387,15 +375,15 @@
 }
 
 .indiv-size-buttons-container button {
-  border: none; /* Remove button border */
-  background: transparent; /* Remove any background */
-  padding: 0; /* Remove internal padding */
-  margin: 0; /* Remove external margin */
-  cursor: pointer; /* Show pointer cursor on hover */
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 .indiv-size-buttons-container svg {
-  display: block; /* Remove inline box space */
+  display: block;
 }
 
 .ml-text {
@@ -413,7 +401,7 @@
   gap: 4.438px;
 }
 
-.ViewProduct-button {
+.view-product-button {
   width: 171px;
   height: 52px;
   flex-shrink: 0;
@@ -421,15 +409,13 @@
   border: 0px solid #382e26;
   background: #382e26;
   text-decoration: none;
-
-  /*text*/
   color: #fffcfa;
   text-align: center;
   font-family: "Hiragino Mincho Pro";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 39px; /* 195% */
+  line-height: 39px;
   letter-spacing: 0.4px;
   text-transform: capitalize;
 }
@@ -444,8 +430,6 @@
 
 .individual-description-text {
   color: #382e26;
-
-  /* body */
   font-family: "Hiragino Mincho Pro";
   font-size: 20px;
   font-style: normal;

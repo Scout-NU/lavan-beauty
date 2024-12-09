@@ -87,6 +87,16 @@
   font-weight: 400;
   line-height: normal;
   padding-left: 9vw;
+  text-decoration: none;
+}
+
+.lavan-beauty a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lavan-beauty a:hover {
+  text-decoration: none;
 }
 
 .first-half {

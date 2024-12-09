@@ -56,7 +56,9 @@ function Header() {
                 </li>
               </li>
             </div>
-            <li className="lavan-beauty">Lavan Beauty</li>
+            <li className="lavan-beauty">
+              <Link to="/">Lavan Beauty</Link>
+            </li>
             <div className="second-half">
               <li className="nav-item">
                 <Link to="/shop">Products</Link>

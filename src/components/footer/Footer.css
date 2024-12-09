@@ -9,6 +9,10 @@
   padding: 20px 0;
   box-sizing: border-box;
   max-width: 1440px;
+  height: 484px;
+  align-self: stretch;
+  padding-top: 130.89px;
+  padding-bottom: 82.89px;
 }
 
 .footer-content {
@@ -158,6 +162,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
 }
 
 .footer-content {
@@ -170,13 +175,21 @@
 }
 
 .footer-section,
-.quick-links-section,
+.quick-links-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  width: 340px;
+}
+
 .customer-care-section,
 .about-lavan-section {
   display: flex;
-  flex-direction: column; /* Stack the header and links vertically */
-  align-items: flex-start; /* Align items to the left */
-  gap: 5px; /* Adjust spacing between header and links */
+  width: 224.029px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
 }
 
 .footer-bottom-sections {
@@ -222,6 +235,14 @@
     display: block;
     font-size: 14px;
     text-align: left;
+  }
+
+  .customer-care-section {
+    display: flex;
+    width: 224.029px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
   }
 
   .input-container input {

@@ -288,6 +288,12 @@
   letter-spacing: 0.4px;
   text-transform: capitalize;
 }
+.set-view-product-button:hover {
+  border: 1px solid var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  cursor: pointer;
+}
 
 /* Individual product section styles */
 .individual-container {
@@ -418,6 +424,13 @@
   line-height: 39px;
   letter-spacing: 0.4px;
   text-transform: capitalize;
+}
+
+.view-product-button:hover {
+  border: 1px solid var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  cursor: pointer;
 }
 
 .indiv-text-container {

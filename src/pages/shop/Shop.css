@@ -7,65 +7,83 @@
   background: #fefaef;
 }
 
-/* Landing section */
-.landing {
-  display: flex;
+.carousel-container {
+  width: 100% !important;
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
-}
-
-.home-carousel {
-  position: relative;
-  width: 100%;
   height: 40.0625rem;
   overflow: hidden;
 }
 
-.home-carousel-arrow {
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.carousel-image.inactive {
+  display: none;
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
-.home-carousel-arrow.prev {
-  left: 1.875rem;
+.carousel-arrow.prev {
+  left: 15px;
 }
 
-.home-carousel-arrow.next {
-  right: 2.5rem;
+.carousel-arrow.next {
+  right: 15px;
 }
 
-.landing-image {
+.carousel-dots {
   position: absolute;
-  height: 40.0625rem;
-  transition: transform 0.5s ease-in-out;
-}
-
-.home-carousel-dots {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px;
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  justify-content: center;
+  width: 100%;
 }
 
-.home-carousel-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
   border-radius: 50%;
   background-color: rgba(254, 250, 239, 0.6);
   border: none;
-  padding: 0;
   cursor: pointer;
 }
 
-.home-carousel-dot.active {
-  background-color: var(--color-bg);
+.carousel-dot.active {
+  background: white;
+}
+
+.landing {
+  display: flex;
+  position: relative;
 }
 
 .landing-text {
@@ -182,11 +200,11 @@
 }
 
 .set-header-container {
-  display: flex; /* Enables flexbox */
-  flex-direction: row; /* Aligns items in a row */
-  justify-content: space-between; /* Adds space between the header and price */
-  align-items: center; /* Aligns items vertically to the center */
-  width: 100%; /* Ensures the container spans the full width */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .set-header {

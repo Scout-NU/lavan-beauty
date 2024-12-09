@@ -2,53 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  width: 1440px;
-  height: 2619px;
-}
-
-.carousel-container {
-  width: 100%;
-  margin: auto;
-  border: 5px solid black;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 500px;
-}
-
-.prevBtn {
-  position: absolute;
-  top: 50px;
-  z-index: 10;
-  left: 5%;
-  font-size: 30px;
-  color: white;
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-.nextBtn {
-  position: absolute;
-  top: 50px;
-  z-index: 10;
-  right: 5%;
-  font-size: 30px;
-  color: white;
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-.Shop {
   width: 1440px;
   height: 3285px;
-  width: 1440px;
-  height: 3285px;
-  background: #FEFAEF;
+  background: #fefaef;
 }
 
 /* Landing section */
@@ -120,75 +76,6 @@
   font-style: italic;
   margin: 3.12rem 0;
 }
-    display: flex;
-    position: relative;
-  }
-  
-  .home-carousel {
-    position: relative;
-    width: 100%;
-    height: 40.0625rem;
-    overflow: hidden;
-  }
-  
-  
-  .home-carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .home-carousel-arrow.prev {
-    left: 1.875rem;
-  }
-  
-  .home-carousel-arrow.next {
-    right: 2.5rem;
-  }
-  
-  .landing-image {
-    position: absolute;
-  height: 40.0625rem;
-  transition: transform 0.5s ease-in-out;
-  }
-  
-  
-  .home-carousel-dots {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .home-carousel-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: rgba(254, 250, 239, 0.6);
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  
-  .home-carousel-dot.active {
-    background-color: var(--color-bg);
-  }
-  
-  .landing-text {
-    color: var(--color-text);
-    text-align: center;
-    font-family: var(--font-baskerville);
-    font-size: var(--font-size-large);
-    font-style: italic;
-    margin: 3.12rem 0;
-  }
 
 .signature-container {
   display: flex;
@@ -204,16 +91,16 @@
   gap: 45px;
 }
 
-.signature-header {
-  color: #000;
-  font-family: "Bodoni 72";
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.signature-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
 }
 
-.signature-description-container {
+.signature-description {
+  align-self: stretch;
   color: #000;
   font-family: Baskerville;
   font-size: 32px;
@@ -265,44 +152,17 @@
   flex-shrink: 0;
 }
 
-.Sun-image {
-  width: 290px;
-  height: 290px;
-  flex-shrink: 0;
-  border-radius: 290px;
-  background: #d9d9d9;
-}
-
 .moon {
   width: 388.484px;
   height: 353.327px;
   flex-shrink: 0;
 }
 
-.MoonCresent-image {
-  width: 388.484px;
-  height: 353.327px;
-  flex-shrink: 0;
-}
-
-.MoonCircle-image {
-  width: 309.381px;
-  height: 309.381px;
-  flex-shrink: 0;
-  border-radius: 309.381px;
-  background: #d9d9d9;
-}
-
-.MoonSquare-image {
-  width: 112px;
-  height: 111px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Baskerville;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.set-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 142px;
+  align-self: stretch;
 }
 
 .products-container {
@@ -330,8 +190,11 @@
 }
 
 .set-header {
-  flex: 1 0 0;
-  color: #000;
+  width: 437px;
+  color: #382e26;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* subheading */
   font-family: Baskerville;
   font-size: 46px;
   font-style: italic;
@@ -340,7 +203,9 @@
 }
 
 .set-price-container {
-  color: #000;
+  color: #382e26;
+
+  /* Prices */
   font-family: "Hiragino Mincho Pro";
   font-size: 24px;
   font-style: normal;

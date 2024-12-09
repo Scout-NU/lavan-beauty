@@ -145,7 +145,6 @@
   line-height: normal;
   width: 118px;
   height: 43px;
-  /* flex-shrink: 0; */
 }
 
 .contact-section {
@@ -155,8 +154,6 @@
 
 .section-header {
   color: var(--Primary-Color, #fefaef);
-
-  /* Nav Header */
   font-family: "Bodoni 72";
   font-size: 30px;
   font-style: normal;
@@ -167,9 +164,9 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Space out sections horizontally */
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 2%; /* Space between sections */
+  gap: 2%;
   width: 100%;
   flex-wrap: nowrap;
 }
@@ -193,28 +190,30 @@
 }
 
 .footer-bottom-sections {
-  display: flex; /* Keep sections side-by-side */
-  flex-direction: row; /* Horizontal alignment */
-  justify-content: space-between; /* Space between sections */
-  gap: 55px; /* Match the original gap between sections */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 55px;
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: auto;
+    width: 100vw;
+  }
   .footer-content {
-    flex-direction: column; /* Stack all main sections vertically */
-    gap: 20px; /* Add vertical spacing between stacked sections */
+    flex-direction: column;
+    gap: 20px;
   }
 
-  /* Reorder sections */
   .contact-section {
-    order: 1; /* Contact section at the top */
+    order: 1;
   }
 
   .quick-links-section {
-    order: 2; /* Quick Links below Contact */
+    order: 2;
   }
 
-  /* Wrap .customer-care-section and .about-lavan-section into a container */
   .footer-bottom-sections {
     display: flex;
     flex-direction: row;

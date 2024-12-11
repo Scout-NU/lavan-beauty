@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #fefaef;
-  padding: 20px;
+
   font-family: Arial, sans-serif;
   width: 1436px;
   gap: 81px;
@@ -47,7 +47,6 @@
   line-height: normal;
 }
 
-/* Flex container for the middle section with image and description */
 .Middle-container {
   display: flex;
   align-items: center;
@@ -74,21 +73,63 @@
   margin-left: 100px;
 }
 
-/* Bottom description styling */
-.Bottom-description {
-  flex-direction: column;
-  justify-content: center;
-  color: #000;
-  font-family: Didot;
-  /* font-size: 30px; */
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 1220px;
-}
-
 @media (min-width: 1440px) {
   .Science {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Science {
+    align-items: flex-start;
+    gap: 20px;
+    width: 100vw;
+  }
+
+  .Science-header {
+    font-size: 45px;
+  }
+
+  .Top-container,
+  .Middle-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .Top-container {
+    order: 1;
+  }
+
+  .Middle-container {
+    order: 3;
+  }
+
+  .topLeftImg {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Top-description {
+    order: 2;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .bottomRightImg {
+    order: 3;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Middle-description {
+    order: 4;
+    width: 100%;
+    font-size: 16px;
   }
 }

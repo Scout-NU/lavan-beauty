@@ -141,8 +141,62 @@
   line-height: normal;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 768px) {
   .Learn {
+    width: 100vw;
+  }
+
+  .Learn-header {
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+
+  .Glossary-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .Glossary-content {
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 18px;
+  }
+
+  .Glossary-item {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .Glossary-list {
+    height: 166px;
+  }
+
+  .Glossary-image {
+    width: 100vw;
+    height: 379px;
+  }
+
+  .Glossary-text-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .Glossary-name {
+    font-size: 20px;
+  }
+
+  .Bottom-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .Learn-button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
   }
 }

@@ -387,6 +387,7 @@
   background: var(--color-primary);
 }
 
+
 @media (max-width: 768px) {
   .day-cream {
     width: 100%;
@@ -519,5 +520,11 @@
   .breadcrumb li,
   .breadcrumb a {
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .day-cream {
+    width: 100%;
   }
 }

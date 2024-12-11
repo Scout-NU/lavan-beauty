@@ -234,7 +234,73 @@
 }
 
 @media (min-width: 1440px) {
-  .AboutUs {
+  .AboutUs-container {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .AboutUs-container {
+    align-items: flex-start;
+    gap: 20px;
+    width: 100vw;
+  }
+
+  .MissionStatement-description,
+  .Founder-description{
+    font-size: 14px;
+  }
+
+  .Founder-header,
+  .About-Us-header{
+    font-size: 32px;
+  }
+
+  .MissionStatement-container,
+  .landing,
+  .AboutUs,
+  .Founder-items {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+    }
+
+    .landing{
+      order: 1;
+    }
+
+    .About-Us-header{
+      order: 2;
+    }
+
+    .MissionStatement-container{
+      order: 3;
+    }
+
+    .second-half{
+      order: 4;
+    }
+
+    .Founder-left{
+      order: 2;
+    }
+
+    .Founder-image{
+      order: 1;
+      width: 323px;
+      height: 308px;
+    }
+
+    .MissionStatement-image{
+      width: 323px;
+      height: 323px;
+    }
+
+
+
+
+}
+
+

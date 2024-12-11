@@ -53,6 +53,9 @@ Manual Deploy The Tech Director goes into Netlify and manually creates a new dep
 
 Merging a Pull Request Whenever a PR is merged into the master branch, Netlify will automatically deploy to keep the site up-to-date. Note: Upon creating and updating any PR, a deploy preview can be accessed from the bottom of the page - this doesn't affect the live site, but is very helpful to view and share code changes in production.
 
+**IMPORTANT: TO CHANGE DOMAIN**
+https://docs.netlify.com/domains-https/custom-domains/
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

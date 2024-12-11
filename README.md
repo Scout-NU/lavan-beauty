@@ -8,6 +8,7 @@ radhakrishnan.an@northeastern.edu
 
 
 **Developer: Alizeh Zaidi**
+zaidi.al@northeastern.edu
 
 ## Available Scripts
 

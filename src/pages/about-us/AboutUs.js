@@ -119,12 +119,21 @@ function AboutUs() {
           />
           <div className="MissionStatement-description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco aboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.{" "}
+            At Lavan, we weave together the timeless 
+            with the transformative, crafting a skincare ritual that 
+            embodies elegance and potency. Each 
+            formulation, meticulously developed by our team 
+            of pharmacists and cosmetic chemists, draws from 
+            nature’s rarest treasures and the finest science. 
+            
+            With a reverence for purity and a commitment to 
+            sustainability, our products transcend mere
+            routine, becoming moments of indulgence and
+            renewal. We invite our clientele into a world
+            where skincare is elevated to an art form—an
+            expression of refined beauty, understated
+            opulence, and enduring grace. Lavan is more than
+            a regimen; it is the essence of luxuriant self-care.{" "}
             </p>
             <a href="/science" className="Learn-more">
               Learn More

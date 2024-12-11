@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import hamburger from "../../assets/header/hamburger.png";
 
 export function Icon() {
   return (
@@ -22,6 +23,13 @@ export function Icon() {
 }
 
 function Header() {
+  // State to toggle hamburger menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to toggle the hamburger menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <head>
@@ -48,7 +56,9 @@ function Header() {
                 </li>
               </li>
             </div>
-            <li className="lavan-beauty">Lavan Beauty</li>
+            <li className="lavan-beauty">
+              <Link to="/">Lavan Beauty</Link>
+            </li>
             <div className="second-half">
               <li className="nav-item">
                 <Link to="/shop">Products</Link>
@@ -59,6 +69,13 @@ function Header() {
               <Icon />
             </div>
           </ul>
+          {/* Hamburger Menu Icon for Mobile */}
+          <div className="hamburger-menu" onClick={toggleMenu}>
+            <img src={hamburger} alt="Menu" className="hamburger-icon" />
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
         </nav>
       </header>
     </>

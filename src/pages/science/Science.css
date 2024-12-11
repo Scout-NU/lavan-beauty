@@ -86,3 +86,9 @@
   line-height: normal;
   max-width: 1220px;
 }
+
+@media (min-width: 1440px) {
+  .Science {
+    width: 100%;
+  }
+}

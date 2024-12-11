@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Lavan Beauty Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Developers:
+**Technical Lead: Ananya Radhakrishnan**
+radhakrishnan.an@northeastern.edu
+
+**Developer: Emily Lin**
+
+
+**Developer: Alizeh Zaidi**
+zaidi.al@northeastern.edu
 
 ## Available Scripts
 
@@ -39,6 +47,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+### Deploying to Netlify
+To update the site, it needs to be deployed to Netlify. This can happen in a number of ways:
+
+Manual Deploy The Tech Director goes into Netlify and manually creates a new deploy.
+
+Merging a Pull Request Whenever a PR is merged into the master branch, Netlify will automatically deploy to keep the site up-to-date. Note: Upon creating and updating any PR, a deploy preview can be accessed from the bottom of the page - this doesn't affect the live site, but is very helpful to view and share code changes in production.
+
+**IMPORTANT: TO CHANGE DOMAIN**
+https://docs.netlify.com/domains-https/custom-domains/
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -61,10 +79,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+

@@ -54,6 +54,15 @@
   position: relative;
 }
 
+.home-carousel .landing-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .home-carousel-arrow {
   position: absolute;
   top: 50%;
@@ -287,5 +296,11 @@
   .bottom-image img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+    width: 100%;
   }
 }

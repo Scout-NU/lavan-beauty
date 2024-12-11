@@ -466,3 +466,74 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+    .shop-container {
+      align-items: flex-start;
+      gap: 20px;
+      width: 100vw;
+    }
+
+    
+    .reviews,
+    .set-reviews,
+    .set-description-text,
+    .individual-description-text{
+      font-size: 14px;
+    }
+
+    .set-price-container,
+    .learnMore-button,
+    .set-ViewProduct-button,
+    .ViewProduct-button,
+    .individual-price-container{
+        font-size: 20px;
+    }
+    
+    .signature-header{
+        font-size: 32;
+    }
+
+    .set-header,
+    .signature-description{
+        font-size: 25px;
+    }
+  
+    .landing,
+    .signature-container,
+    .products-container,
+    .signature-second-container,
+    .individual-container,
+    .set-container {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 100%;
+      gap: 20px;
+    }
+  
+    .landing {
+      order: 1;
+    }
+
+    .signature-container{
+        order: 2;
+    }
+  
+    .products-container {
+      order: 3;
+    }
+
+    .moon,
+    .sun {
+        width: 259.27px;
+        height: 259.27px;
+    }
+  
+    .set-image,
+    .individual-cream-image {
+        width: 374px;
+        height: 374px;
+    }
+  }
+
